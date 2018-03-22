@@ -23,10 +23,10 @@ Syntax highlighted code block
 [Link](url) and ![Image](src)
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+For more details see [GitHub Flavored Markdown](https://github.com/cdl9/cdl9.github.io/edit/master/resume.pdf).
 
 
 ### Support or Contact
 
-cdl9@njit.edu
-(201) 686-8708
+- cdl9@njit.edu
+- (201) 686-8708
