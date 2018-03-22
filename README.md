@@ -23,7 +23,7 @@ Syntax highlighted code block
 [Link](url) and ![Image](src)
 ```
 
-For more details see [GitHub Flavored Markdown](https://github.com/cdl9/cdl9.github.io/edit/master/resume.pdf).
+For more details see [Resume](https://github.com/cdl9/cdl9.github.io/blob/master/CL%20Resume%20(1).pdf).
 
 
 ### Support or Contact
