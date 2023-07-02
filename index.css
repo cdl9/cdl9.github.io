@@ -130,7 +130,7 @@ p.bigTitle{
     font-weight:bold;
     text-align:center;
     font-size:56px;
-    color:#303030;
+
 }
  
 p.subTitle{
@@ -148,10 +148,13 @@ p.career{
 }
  
 p.text{
-    margin:12px 90px;
+    margin:12px 0px;
     font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
     color:var(--fontDark);
     font-size:20px;
+}
+span.highlightText{
+    color:var(--dark1)
 }
 #textContact{
     margin:12px auto;
@@ -165,14 +168,35 @@ p.text{
     
 	margin-top: 50px;
 	font-size:30px; 
+	overflow: hidden;
+	text-align:center;
+}
+#subtitle1:before,
+#subtitle1:after{
+  background-color: var(--dark1);
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 30vw;
+
+}
+#subtitle1:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+#subtitle1:after {
+  left: 0.5em;
+  margin-right: -50%;
 }
 
 #subtitle4{
 	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
 	color:var(--fontDark);    
 	display:inline-block;
-	margin-left:90px;    
-	margin-top: 50px;
+	
 	font-size:30px; 
 }
 ul,li{
@@ -196,7 +220,7 @@ ul{
 }
  
 .sections{
-    background-color: #fffdf6;
+    background-color: white;
 
     position:relative;
 }
@@ -227,18 +251,23 @@ ul{
 
 #about{
     background-color: white;
-    display:inline-block;
+	
 }
 
 #headerAbout{
     position:relative;
     background-repeat:no-repeat;
-    width:90%;
-    background-color: var(--main3);
+    width:80%;
+    //background-color: var(--main2);
     z-index:0;
     margin:auto;
-    margin-top:80px;
-    padding-bottom:20px;
+    margin-top:30px;
+    //border-left: solid #9262dd;
+    border-style:solid;
+    border-image: linear-gradient(#9262dd,#c1c8fd) 0 100%;
+    border-left-width: 3.5px;
+    padding:30px 40px;
+    padding-bottom:30px;
 }
 
 /*Skills*********************************************************/
@@ -250,14 +279,15 @@ ul{
 }
 #skillsList{
     padding-left:0px;padding-top:0px;
-    margin:70px auto;
+    margin:50px auto;
     position:relative;
     width:70%;
 }
 
 #skillsGroup{
     width:100%;
-    background-color: var(--main3);
+    //background-color: var(--main3);
+    background-color: white;
     text-align:center;
     position:relative;
     margin-top:40px;
@@ -308,15 +338,26 @@ div.skillBox:hover::after{
 }
  
 */
-#box{
+.box{
     background-color: white;
     background-color: var(--main3);
     margin: auto;
-    width: 150px;
-    height: 150px;
+    width: 160px;
+    height: 160px;
     position:relative;
     display: inline-block;
     vertical-align: top;
+    border-radius:5%;
+    font-weight:500;
+    //text-align:center;
+    font-size:19px;
+    //margin-top:10px;
+    //color:#303030;
+}
+.box:hover{
+	background-color:var(--dark1);
+	color:white;
+	top:-10px;
 }
 #box2{
     background-color: white;
@@ -338,14 +379,15 @@ div.skillBox:hover::after{
     display:inline-block;
     padding:10px 0px;
     color:var(--techIcon);
-    margin-top:0px;
+    margin-top:10px;
     font-size:70px;
      
 }
+/*
 .icon1:hover{
 	color:var(--dark1);
 }
-
+*/
 .centerDIV,.projectDetailsDIV {
     position: fixed;
     top: 0;
@@ -361,9 +403,9 @@ div.skillBox:hover::after{
         background-color: #FFF;
         border: solid 1px #999;
         color: #000;
-        width: 600;
+        width: auto;
         height: auto;
-        padding: 20px;
+        padding: 20px 20px;
         -webkit-border-radius: 10px;
         -webkit-box-orient: vertical;
         -webkit-transition: 200ms -webkit-transform;
@@ -374,7 +416,7 @@ div.skillBox:hover::after{
 
 #projects{
     text-align:center;
-    background-color: var(--main4);
+    background-color: white;
     
 }
  
@@ -395,7 +437,10 @@ div.projects{
     background-repeat:no-repeat;
 
 }
- 
+div.navProjects{
+    width:400px;
+    height:400px;
+}
 div.projects:hover .tags{
     visibility: visible;
     opacity:1;
@@ -403,8 +448,8 @@ div.projects:hover .tags{
 
 p.tags{
     position:absolute;
-    color:#b4d5d2;
-    font-weight:bold;
+    color:white;
+    //font-weight:bold;
     margin: auto calc(50% - 125px);
     padding-top:60px;
     text-align:center;
@@ -511,7 +556,7 @@ p.tags{
 /*Illustrations********************/
 #illustrations{
     text-align:center;
-    background-color: var(--main4);
+    background-color: white;
     
 }
 div.illustrations{
@@ -524,6 +569,11 @@ div.illustrations{
     background-size: contain;
     background-repeat:no-repeat;
 
+}
+div.zoomIllustration{
+    width:500px;
+    height:500px;
+    margin:0px 0px;
 }
 #illustration1{
     background: rgba(0,0,0,0) url("illustration1.jpg");

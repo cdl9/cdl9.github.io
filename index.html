@@ -94,78 +94,85 @@ $(window).bind('load scroll',function() {
 	<li>
 		<div>
 		<div class="sections" id="home">
-			<div id="headerHome">
+			
 			</div>
-		</div>
-		<div class="sections" style="padding-bottom: 15vh;">
+			<div id="headerHome">
+			<div class="sections" style="padding-bottom: 15vh;">
+			<canvas id="canvas">
+			</canvas>
 			<p class="bigTitle">Welcome to my page!</p>
 			<p class="subTitle">Personal Portfolio Website</p>
 			<button class="submitButton" id="downloadButton" onclick="window.open('Christian_Leon_Resume_2023.pdf','_blank')">DOWNLOAD CV</button>
+			</div>
+				
+			
 		</div>
 		</div>
+		
 	</li>
 	
 	<li>
 	<div class="sections" id="about">
 			<div id="headerAbout">
-				<p class="name" id="subtitle4">Who am I?</p>
-				<p class="text"> I'm a Front-End Developer in NYC. I have a serious passion for UI effects, animations and creating intuitive, dynamic user experiences. Let's make something special!</p>
+				<p class="name" id="subtitle4"><span class="name highlightText">02.</span> About me</p>
+				<p class="text"> I'm a
+				<span class="text highlightText">Front-End Developer</span>
+					in NYC. I have a serious passion for UI effects, animations and creating intuitive, dynamic user experiences. Let's make something special!
+				</p>
 			</div>
 		
 		<ul id="skillsList">
 		<div id="skillsGroup">
 		<li class="horizontalList" id="skillSpace">
-		<div id="box">
+		<div class="box">
 			<i class="fab fa-html5 icon1" aria-hidden="true"></i>			
-			<p class="skill">HTML</p>
+			<br>HTML
 		</div>
 		</li>
 	
 		<li class="horizontalList" id="skillSpace">
-		<div id="box">
+		<div class="box">
 			<i class="fab fa-css3-alt icon1" aria-hidden="true"></i>
-			<p class="skill">CSS</p>
+			<br>CSS
 		</div>
 		</li>
 
 		<li class="horizontalList" id="skillSpace">
-			<div id="box">
+		<div class="box">
 				<i class="fab fa-js icon1" aria-hidden="true"></i>
-				<p class="skill">JavaScript</p>
+				<br>JavaScript
 		</div>
 		</li>
 	
 		<li class="horizontalList" id="skillSpace">
-		<div id="box">
+		<div class="box">
 			<i class="fab fa-react icon1" aria-hidden="true" id="btClick"></i>
-			<p class="skill">React</p>
+			<br>React
 		</div>
-		
 		</li>
 		
-
 		<li class="horizontalList" id="skillSpace">
-				<div id="box">
+		<div class="box">
 					<i class="fas fa-file-code icon1" aria-hidden="true"></i>
-					<p class="skill">C++</p>
-				</div>
+					<br>C++
+		</div>
 		</li>
 		<li class="horizontalList" id="skillSpace">
-			<div id="box">
+			<div class="box">
 				<i class="fab fa-java icon1" aria-hidden="true"></i>
-				<p class="skill">Java</p>
+				<br>Java
 			</div>
 		</li>
 		<li class="horizontalList" id="skillSpace">
-			<div id="box">
+			<div class="box">
 				<i class="fab fa-python icon1" aria-hidden="true"></i>
-				<p class="skill">Python</p>
+				<br>Python
 			</div>
 		</li>
 		<li class="horizontalList" id="skillSpace">
-			<div id="box">
+			<div class="box">
 				<i class="fas fa-database icon1" aria-hidden="true"></i>
-				<p class="skill">MySQL</p>
+				<br>MySQL
 			</div>
 		</li>
 		</div>
@@ -176,22 +183,25 @@ $(window).bind('load scroll',function() {
 	
 	<li>
 	<div class="sections" id="projects">
-		<p class="name" id="subtitle1">Projects</p>
+		<p class="name" id="subtitle1"><span class="name highlightText">03.</span> Projects</p>
 		<ul id="projectsList">
-			<li class="horizontalList"><div class="projects project1">
-			<p class="tags">
-			<button class="submitButton learnButton" id="learnButton">Learn More</button></p></div>
+			<li class="horizontalList">
+			<div class="projects project1">
+			<p class="tags"><span style="font-size:20px">FieldWorker App</span><br><span class="highlightText">React Native </span>
+				<button class="submitButton learnButton" id="learnButton">Learn More</button>
+			</p></div>
 			</li>
 			<li class="horizontalList"><div class="projects project2">
-				<p class="tags">
-				<button class="submitButton learnButton" id="learnButton">Learn More</button></p></div>
+			<p class="tags"><span style="font-size:20px">Itxel Cosmetics</span><br><span class="highlightText">Shopify </span><br>
+				<button class="submitButton learnButton" id="learnButton">Learn More</button>
+			</p></div>
 			</li>
 			<li class="horizontalList"><div class="projects project3">
-				<p class="tags">
+				<p class="tags"><span style="font-size:20px">Web Portfolio V1</span><br><span class="highlightText">JavaScript </span>
 				<button class="submitButton learnButton" id="learnButton">Learn More</button></p></div>
 			</li>
 			<li class="horizontalList"><div class="projects project4">
-				<p class="tags">
+				<p class="tags"><span style="font-size:20px">Exquisite Staffing</span><br><span class="highlightText">React </span><br>
 				<button class="submitButton learnButton" id="learnButton">Learn More</button></p></div>
 			</li>
 		</ul>
@@ -203,19 +213,19 @@ $(window).bind('load scroll',function() {
 			<ul id="projectsList">
 				<li class="horizontalList"><div class="projects" id="illustration1">
 				<p class="tags">
-				<button class="submitButton" id="learnButton">Learn More</button></p></div>
+				<button class="submitButton learnButton" id="learnButton">See More</button></p></div>
 				</li>
 				<li class="horizontalList"><div class="projects" id="illustration2">
 					<p class="tags">
-					<button class="submitButton" id="learnButton">Learn More</button></p></div>
+					<button class="submitButton  learnButton" id="learnButton">See More</button></p></div>
 				</li>
 				<li class="horizontalList"><div class="projects" id="illustration3">
 					<p class="tags">
-					<button class="submitButton" id="learnButton">Learn More</button></p></div>
+					<button class="submitButton learnButton" id="learnButton">See More</button></p></div>
 				</li>
 				<li class="horizontalList"><div class="projects" id="illustration4">
 					<p class="tags">
-					<button class="submitButton" id="learnButton">Learn More</button></p></div>
+					<button class="submitButton learnButton" id="learnButton">See More</button></p></div>
 				</li>
 			
 			</ul>
@@ -249,8 +259,8 @@ $(window).bind('load scroll',function() {
 		<!-- The element which will float at the center of the screen -->
 		<div class="divFloat">
 			<input type="button" id="btClose" class="btClose" value="x" />
-			<br><br>
-			<div style="margin-left: 15px;">
+			<br>
+			<div style="margin: 15px 30px;">
 				<h6>HTML and HTML5</h6>
 				<p >Tags, links, lists, tables, forms</p>
 				<h6>Experience Level</h6>
@@ -263,8 +273,8 @@ $(window).bind('load scroll',function() {
 	<div class="centerDIV">
 		<div class="divFloat">
 			<input type="button" id="btClose" class="btClose" value="x" />
-			<br><br>
-			<div style="margin-left: 15px;">
+			<br>
+			<div style="margin: 15px 30px;">
 				<h6>CSS</h6>
 				<p >Transitions, Animations, Bootstrap</p>
 				<h6>Experience Level</h6>
@@ -277,8 +287,8 @@ $(window).bind('load scroll',function() {
 	<div class="centerDIV">
 		<div class="divFloat">
 			<input type="button" id="btClose" class="btClose" value="x" />
-			<br><br>
-			<div style="margin-left: 15px;">
+			<br>
+			<div style="margin: 15px 30px;">
 				<h6>JavaScript</h6>
 				<p >eventHandlers, DOM management</p>
 				<h6>Experience Level</h6>
@@ -291,8 +301,8 @@ $(window).bind('load scroll',function() {
 	<div class="centerDIV">
 		<div class="divFloat">
 			<input type="button" id="btClose" class="btClose" value="x" />
-			<br><br>
-			<div style="margin-left: 15px;">
+			<br>
+			<div style="margin: 15px 30px;">
 				<h6>React</h6>
 				<p >eventHandlers, DOM management</p>
 				<h6>Experience Level</h6>
@@ -306,8 +316,8 @@ $(window).bind('load scroll',function() {
 		<!-- The element which will float at the center of the screen -->
 		<div class="divFloat">
 			<input type="button" id="btClose" class="btClose" value="x" />
-			<br><br>
-			<div style="margin-left: 15px;">
+			<br>
+			<div style="margin: 15px 30px;">
 				<h6>C++</h6>
 				<p >Functions, Object Oriented Programming</p>
 				<h6>Experience Level</h6>
@@ -320,8 +330,8 @@ $(window).bind('load scroll',function() {
 	<div class="centerDIV">
 		<div class="divFloat">
 			<input type="button" id="btClose" class="btClose" value="x"/>
-			<br><br>
-			<div style="margin-left: 15px;">
+			<br>
+			<div style="margin: 15px 30px;">
 				<h6>Java</h6>
 				<p >Class, functions</p>
 				<h6>Experience Level</h6>
@@ -334,8 +344,8 @@ $(window).bind('load scroll',function() {
 	<div class="centerDIV">
 		<div class="divFloat">
 			<input type="button" id="btClose" class="btClose" value="x" />
-			<br><br>
-			<div style="margin-left: 15px;">
+			<br>
+			<div style="margin: 15px 30px;">
 				<h6>Python</h6>
 				<p >Functions</p>
 				<h6>Experience Level</h6>
@@ -348,8 +358,8 @@ $(window).bind('load scroll',function() {
 	<div class="centerDIV">
 		<div class="divFloat">
 			<input type="button" id="btClose" class="btClose" value="x" />
-			<br><br>
-			<div style="margin-left: 15px;">
+			<br>
+			<div style="margin: 15px 30px;">
 				<h6>MySQL</h6>
 				<p >Relational Data</p>
 				<h6>Experience Level</h6>
@@ -367,7 +377,7 @@ $(window).bind('load scroll',function() {
 			<div class="divFloat">
 				<input type="button" id="btClose" class="btClose" value="x"/>
 				<br><br>
-				<ul >
+				<ul>
 					<li class="horizontalList">
 					<div class="projects navProjects" id="project1">
 						<div class="navigationBar">
@@ -376,8 +386,8 @@ $(window).bind('load scroll',function() {
 						</div>
 					</div>
 					</li>
-					<li class="horizontalList">
-					<div style="margin-left: 15px;">
+					<li class="horizontalList" style=" vertical-align: top;">
+					<div style="margin-top: 50px; margin-left: 25px; margin-right:50px">
 						<h6>Company</h6>
 						<p>AnalytIQ</p>
 						<h6>Front End</h6>
@@ -386,6 +396,7 @@ $(window).bind('load scroll',function() {
 						<p >#mySQL</p>
 						<h6>Other Technologies</h6>
 						<p >#git #figma</p>
+						<a href="https://apps.apple.com/us/app/fieldworker/id1529488939" target="_blank">See on Appstore</a>
 					</div>
 					</li>
 				</ul>
@@ -404,8 +415,8 @@ $(window).bind('load scroll',function() {
 						</div>
 					</div>
 					</li>
-					<li class="horizontalList">
-					<div style="margin-left: 15px;">
+					<li class="horizontalList" style=" vertical-align: top;">
+					<div style="margin-top: 50px; margin-left: 25px; margin-right:50px">
 						<h6>Company</h6>
 						<p>ITXEL Cosmetics</p>
 						<h6>Front End</h6>
@@ -432,8 +443,8 @@ $(window).bind('load scroll',function() {
 						</div>
 					</div>
 					</li>
-					<li class="horizontalList">
-					<div style="margin-left: 15px;">
+					<li class="horizontalList" style=" vertical-align: top;">
+					<div style="margin-top: 50px; margin-left: 25px; margin-right:50px">
 						<h6>Company</h6>
 						<p>Website Portfolio</p>
 						<h6>Front End</h6>
@@ -460,8 +471,8 @@ $(window).bind('load scroll',function() {
 						</div>
 					</div>
 					</li>
-					<li class="horizontalList">
-					<div style="margin-left: 15px;">
+					<li class="horizontalList" style=" vertical-align: top;">
+					<div style="margin-top: 50px; margin-left: 25px; margin-right:50px">
 						<h6>Company</h6>
 						<p>Exquisite Staffing</p>
 						<h6>Front End</h6>
@@ -476,8 +487,37 @@ $(window).bind('load scroll',function() {
 			</div>
 		</div>
 		</div>
-
-</div>
+		
+		<div>
+		<div class="projectDetailsDIV">
+			<div class="divFloat">
+				<div class="projects zoomIllustration" id="illustration1">
+					<input type="button" id="btClose" class="btClose" style="margin:10px;" value="x" />
+				</div>
+			</div>
+		</div>
+		<div class="projectDetailsDIV">
+			<div class="divFloat">
+				<div class="projects zoomIllustration" id="illustration2">
+					<input type="button" id="btClose" class="btClose" style="margin:10px;" value="x" />
+				</div>
+			</div>
+		</div>
+		<div class="projectDetailsDIV">
+			<div class="divFloat">
+				<div class="projects zoomIllustration" id="illustration3">
+					<input type="button" id="btClose" class="btClose" style="margin:10px;" value="x" />
+				</div>
+			</div>
+		</div>
+		<div class="projectDetailsDIV">
+			<div class="divFloat">
+				<div class="projects zoomIllustration" id="illustration4">
+					<input type="button" id="btClose" class="btClose" style="margin:10px;" value="x" />
+				</div>
+			</div>
+		</div>
+		</div>
 
 </div>
 
