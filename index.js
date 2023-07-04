@@ -17,6 +17,13 @@ aboutIcon[i].onclick = function(event){
 }
 }
 */
+
+
+function loadingElement() {
+	var headerBar = document.getElementById("floatingBoxWrapper2");
+  console.log("Wok");
+	headerBar.style.opacity=1;
+}
 var aboutFloatingBox = document.getElementsByClassName("centerDIV");
 var btClose= document.getElementsByClassName("btClose");
 for(let i=0;i<aboutIcon.length;i++){
@@ -116,7 +123,27 @@ window.addEventListener('click',function(e){
 */
 
 /*Animation*/
+/*
+var canvas2 = document.getElementById("canvas2");
+var c2 = canvas2.getContext("2d");
+var tx2 = window.innerWidth;
+var ty2 = window.innerHeight/3;
 
+
+canvas2.width = tx2;
+canvas2.height = ty2;
+
+c2.strokeWidth=5;
+
+var mousex2 = 0;
+var mousey2 = 0;
+
+addEventListener("mousemove", function() {
+  mousex2 = event.clientX;
+  mousey2 = event.clientY-110;//Adding top bar height
+});
+*/
+/////////////////////////////
 var canvas = document.getElementById("canvas");
 console.log(canvas);
 var c = canvas.getContext("2d");
@@ -162,9 +189,13 @@ function Ball() {
   this.vel = Math.random() /5;
   this.update = function() {
     c.beginPath();
+   // c2.beginPath();
     c.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
+//c2.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
     c.fillStyle = this.color;
+//c2.fillStyle = this.color;
     c.fill();
+//c2.fill();
     //c.stroke();
   };
 }
@@ -183,6 +214,7 @@ function animate() {
   }
   requestAnimationFrame(animate);
   c.clearRect(0, 0, tx, ty);
+//c2.clearRect(0, 0, tx, ty);
   for (var i = 0; i < bal.length; i++) {
     bal[i].update();
     bal[i].y += bal[i].dy;
@@ -190,7 +222,8 @@ function animate() {
     if (bal[i].y + bal[i].radius >= ty) {
       if(bal[i].dy>0)
         bal[i].dy = -bal[i].dy * grav;
-    } else {
+    }
+    else {
       bal[i].dy += bal[i].vel;
     }    
     if(bal[i].x + bal[i].radius > tx || bal[i].x - bal[i].radius < 0){

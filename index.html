@@ -71,10 +71,16 @@ $(window).bind('load scroll',function() {
 </head>
 
 
-<body>
+<body onload="loadingElement()" id="floatingBoxWrapper2">
 
-<div id="floatingBoxWrapper">
-<div id="nameBox"><a id="nameLink" href="#home">Christian Leon</a></div>
+<div id="floatingBoxWrapper" >
+<a href="#home">
+<div id="nameBox" >
+<div id="logo1"></div>
+<a id="nameLink" href="#home">Christian Leon</a>
+</div>
+</a>
+
 <div id="floatingBox">
 	<ul>	
 	<li class="horizontalList"><a class="link" href="#home"> HOME </a></li>
@@ -93,11 +99,9 @@ $(window).bind('load scroll',function() {
 <div id="sectionsList">
 	<li>
 		<div>
-		<div class="sections" id="home">
-			
-			</div>
+		
 			<div id="headerHome">
-			<div class="sections" style="padding-bottom: 15vh;">
+			<div class="sections" id="home" style="padding-bottom: 15vh;">
 			<canvas id="canvas">
 			</canvas>
 			<p class="bigTitle">Welcome to my page!</p>
@@ -114,7 +118,7 @@ $(window).bind('load scroll',function() {
 	<li>
 	<div class="sections" id="about">
 			<div id="headerAbout">
-				<p class="name" id="subtitle4"><span class="name highlightText">02.</span> About me</p>
+				<p class="name " id="subtitle4"><span class="name highlightText">02.</span> About me</p>
 				<p class="text"> I'm a
 				<span class="text highlightText">Front-End Developer</span>
 					in NYC. I have a serious passion for UI effects, animations and creating intuitive, dynamic user experiences. Let's make something special!
@@ -245,12 +249,21 @@ $(window).bind('load scroll',function() {
 		<textarea placeholder="Message"class="inputFields message"></textarea>
 	
 		<button class="submitButton"> SUBMIT</button>
-	
-		
 		</div>
+		<div id="container">
+			<div id="ball-2" class="circle"></div>
+			<div id="ball-1" class="circle"></div>
+			<div id="ball-2" class="circle"></div>
+			<div id="ball-3" class="circle"></div>
+			<div id="ball-2" class="circle"></div>
+
+		</div>
+
+		</div>
+
 		<div id="socialmedia">
-			<p id="signature">© Christian Leon Designs 2022</p>
-		</div>
+			<p id="signature">© Christian Leon Designs 2023</p>
+		
 	</div>
 	</li>
 
@@ -379,7 +392,7 @@ $(window).bind('load scroll',function() {
 				<br><br>
 				<ul>
 					<li class="horizontalList">
-					<div class="projects navProjects" id="project1">
+					<div class="navProjects" id="project1">
 						<div class="navigationBar">
 						<div class="nBL" id="nBL"><</div>
 						<div class="nBR" id="nBR">></div>
@@ -397,6 +410,8 @@ $(window).bind('load scroll',function() {
 						<h6>Other Technologies</h6>
 						<p >#git #figma</p>
 						<a href="https://apps.apple.com/us/app/fieldworker/id1529488939" target="_blank">See on Appstore</a>
+						<br><br>
+						<a href="#" class="fa fa-github" id="smIcon" style="color:#6371dd" onclick="window.open('https://github.com/analytiq-v/Analytiq_app','_blank')"></a>
 					</div>
 					</li>
 				</ul>
@@ -408,7 +423,7 @@ $(window).bind('load scroll',function() {
 				<br><br>
 				<ul >
 					<li class="horizontalList">
-					<div class="projects navProjects" id="project2">
+					<div class="navProjects" id="project2">
 						<div class="navigationBar">
 						<div class="nBL" id="nBL"><</div>
 						<div class="nBR" id="nBR">></div>
@@ -436,7 +451,7 @@ $(window).bind('load scroll',function() {
 				<br><br>
 				<ul >
 					<li class="horizontalList">
-					<div class="projects navProjects" id="project3">
+					<div class="navProjects" id="project3">
 						<div class="navigationBar">
 						<div class="nBL" id="nBL"><</div>
 						<div class="nBR" id="nBR">></div>
@@ -464,7 +479,7 @@ $(window).bind('load scroll',function() {
 				<br><br>
 				<ul >
 					<li class="horizontalList">
-					<div class="projects navProjects" id="project4">
+					<div class="navProjects" id="project4">
 						<div class="navigationBar">
 						<div class="nBL" id="nBL"><</div>
 						<div class="nBR" id="nBR">></div>
@@ -491,28 +506,28 @@ $(window).bind('load scroll',function() {
 		<div>
 		<div class="projectDetailsDIV">
 			<div class="divFloat">
-				<div class="projects zoomIllustration" id="illustration1">
+				<div class="zoomIllustration" id="illustration1">
 					<input type="button" id="btClose" class="btClose" style="margin:10px;" value="x" />
 				</div>
 			</div>
 		</div>
 		<div class="projectDetailsDIV">
 			<div class="divFloat">
-				<div class="projects zoomIllustration" id="illustration2">
+				<div class="zoomIllustration" id="illustration2">
 					<input type="button" id="btClose" class="btClose" style="margin:10px;" value="x" />
 				</div>
 			</div>
 		</div>
 		<div class="projectDetailsDIV">
 			<div class="divFloat">
-				<div class="projects zoomIllustration" id="illustration3">
+				<div class="zoomIllustration" id="illustration3">
 					<input type="button" id="btClose" class="btClose" style="margin:10px;" value="x" />
 				</div>
 			</div>
 		</div>
 		<div class="projectDetailsDIV">
 			<div class="divFloat">
-				<div class="projects zoomIllustration" id="illustration4">
+				<div class="zoomIllustration" id="illustration4">
 					<input type="button" id="btClose" class="btClose" style="margin:10px;" value="x" />
 				</div>
 			</div>
