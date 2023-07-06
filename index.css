@@ -19,8 +19,6 @@ html{
 }
 body{
     background-color: var(--fontLight);
-    //opacity: 0;
-    //transition: opacity 1s;
 }
 
 body::after{
@@ -38,7 +36,6 @@ body::after{
     z-index: 1;
     background:var(--dark1);
 	opacity: 1;
-    //transition: opacity 3s;
     animation: fadein 0.5s;
 }
 @keyframes fadein{
@@ -70,8 +67,6 @@ body::after{
     width:350px;
     height:110px;
     background:var(--dark1);
-    //text-align: center;
-    //vertical-align:middle;
 }
 #nameBox:hover{
     opacity:0.8;
@@ -80,29 +75,25 @@ body::after{
     position:relative;
     //text-align:center;
     color:var(--fontLight);
-    //background:red;
     font-weight:500;
     margin: 35px 20px;
     float:left;
     display:inline-block;
     font-size:30px;
-    //vertical-align:top;
 }
 #logo1{
     background: rgba(0,0,0,0) url("Logo.png");
     background-size: contain;
-    //background-size: 100% 100%;
     margin:20px 0px;
     margin-left:40px;
     position:relative;
     display:inline-block;
     height:70px;
     width:70px;
-float:left;
+    float:left;
 }
 #nameLink:hover{
     text-decoration: none;
-    //opacity:0.7;
 }
 a.link{
     position:relative;
@@ -165,11 +156,13 @@ p.bigTitle{
     font-weight:bold;
     text-align:center;
     font-size:56px;
-    color:red;
     color:var(--fontDark);
     opacity:0;
+    -webkit-animation: fadein 0.5s;
     animation: fadein 0.5s;
+    -webkit-animation-delay:1.2s;
     animation-delay:1.2s;
+    -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
  
@@ -670,7 +663,7 @@ div.zoomIllustration{
     width:70%;
     background-color: var(--fontLight);
     margin:auto;
-    margin-bottom:20px;
+    margin-bottom:60px;
     border-top:10px solid var(--main3);
     //border-bottom:10px solid var(--main3);
     padding-left:5%;
@@ -903,9 +896,11 @@ div.zoomIllustration{
     animation-fill-mode: forwards;
 }
 .roundButton{
+    //-webkit-appearance:none;
     background-color: #303030;
     width: 50px;
     height:50px;
+    -webkit-border-radius:100%;
     border-radius:100%;
     background: #303030;
     border:none;
