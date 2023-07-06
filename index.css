@@ -764,7 +764,7 @@ div.zoomIllustration{
 /*Buttons*********************************************/
 .submitButton{
     height:40px;
-    width:180px;
+    width:220px;
     border:none;
     background:var(--squareButton);
     color:var(--fontLight);
