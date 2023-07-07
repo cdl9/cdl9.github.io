@@ -290,7 +290,7 @@ ul{
     margin:auto;
 }
 
-@media (max-width:500px) {
+@media (max-device-width:450px) {
     #home{
         padding-bottom: 15vh;
     }
