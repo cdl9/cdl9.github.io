@@ -236,9 +236,9 @@ span.highlightText{
 	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
 	color:var(--fontDark);    
 	display:inline-block;
-	
 	font-size:30px; 
 }
+
 ul,li{
     list-style-type:none;
     padding:0;   
@@ -290,27 +290,7 @@ ul{
     margin:auto;
 }
 
-@media (max-device-width:450px) {
-    #home{
-        padding-bottom: 15vh;
-    }
-    #headerHome{
-        height:70vh;
-    }
-    p.bigTitle{
-        font-size: 70px;
-    }
-    p.subtitle{
-        font-size: 50px;
-    }
-    #downloadButton{
-        height:100px;
-        width:300px;
-        font-size: 30px;
-        margin: auto calc( 50% - 150px );
 
-    }
-}
 /*About Section*******************************************************************/
 
 #about{
@@ -422,6 +402,8 @@ div.skillBox:hover::after{
     //margin-top:10px;
     //color:#303030;
 }
+
+
 .box:hover{
 	background-color:var(--dark1);
 	color:var(--fontLight);
@@ -451,6 +433,7 @@ div.skillBox:hover::after{
     font-size:70px;
      
 }
+
 /*
 .icon1:hover{
 	color:var(--dark1);
@@ -506,6 +489,7 @@ div.projects{
     border:1px solid #f7f7f7;
 
 }
+
 div.navProjects{
     width:400px;
     height:400px;
@@ -713,6 +697,7 @@ div.zoomIllustration{
 
 } 
 
+
 .inputFields:focus{
     outline:none;
   /*  border-bottom: 3px solid var(--accent1);
@@ -853,6 +838,7 @@ div.zoomIllustration{
     animation-delay:1.4s;
     animation-fill-mode: forwards;
 }
+
 #learnButton{
 	margin-left:8px;
 	margin-top:25px;
@@ -1016,3 +1002,59 @@ div.zoomIllustration{
       transform: translateY(0);
     }
   }
+
+  @media (max-device-width:450px) {
+    #home{
+        //padding-bottom: 15vh;
+    }
+    #headerHome{
+       // height:70vh;
+    }
+    p.bigTitle{
+        font-size: 70px;
+    }
+    p.subtitle{
+        font-size: 50px;
+    }
+    #downloadButton,.submitButton{
+        height:120px;
+        width:340px;
+        font-size: 35px;
+        padding-top:30px;
+    }
+    #downloadButton{
+        margin: auto calc( 50% - 170px );
+    }
+}
+@media (max-device-width:450px) {
+    #subtitle4,#subtitle1{
+        font-size:50px;
+    }
+    p.text, #textContact,#signature{
+        font-size:40px;
+    }
+    #textContact{
+        margin-bottom: 40px;
+        width:100%;
+    }
+    .box,div.projects{
+        width:300px;
+        height:300px;
+        font-size:40px;
+    }
+    .icon1{
+        font-size: 150px;
+        margin-top:30px;
+    }
+    .inputFields{
+        height:100px;
+    }
+    .inlineInputFields{
+        display:block;
+        width:calc(100% - 0px);
+        margin-bottom:10px
+    }
+    #socialmedia{
+        height: 100px;
+    }
+}
