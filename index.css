@@ -607,7 +607,7 @@ p.tags{
 }
 
 .project4, #project4{
-    background: rgba(0,0,0,0) url("mrc.jpeg");
+    background: rgba(0,0,0,0) url("itxel3.jpg");
     background-size: contain;
     background-size: 100% 100%;
 }
@@ -616,7 +616,7 @@ p.tags{
 }
 @keyframes slides4{
     0%,40% {
-        background: rgba(0,0,0,0) url("mrc.jpeg");
+        background: rgba(0,0,0,0) url("itxel3.jpg");
         background-size: contain;
         background-size: 100% 100%;
     }
