@@ -542,7 +542,7 @@ p.tags{
     background-size: 100% 100%;
 }
 .project1{
-    animation: slides1 5s ease infinite alternate;
+    animation: slides1 7.5s ease infinite alternate;
 }
 @keyframes slides1{
     0%,40% {
@@ -927,7 +927,7 @@ div.zoomIllustration{
     height:50px;
     padding:0;
     //-webkit-border-radius:25px;
-    border-radius:25px;
+    border-radius:50%;
     background: #303030;
     border:none;
     outline:none;
@@ -1071,10 +1071,18 @@ div.zoomIllustration{
         margin-bottom: 40px;
         width:100%;
     }
-    .box,div.projects{
+    .box{
         width:300px;
         height:300px;
         font-size:40px;
+    }
+    div.projects{
+        width:350px;
+        height:350px;
+    }
+    p.tags{
+        margin: auto calc(50% - 175px);
+
     }
     .icon1{
         font-size: 150px;
@@ -1087,6 +1095,13 @@ div.zoomIllustration{
         display:block;
         width:calc(100% - 0px);
         margin-bottom:10px
+    }
+    .roundButton{
+        width: 100px;
+        height:100px;
+    }
+    #smIcon{
+        font-size: 50px;
     }
     #socialmedia{
         height: 100px;
