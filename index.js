@@ -24,15 +24,55 @@ function loadingElement() {
   console.log("Wok");
 	headerBar.style.opacity=1;
 }
+/*
+const element = document.getElementById('skillCard');
+
+document.addEventListener('click', function(event) {
+  // Check if the click is outside the element
+  if (!element.contains(event.target)) {
+    // Close or hide the element
+    element.style.display = 'none';
+  }
+});*/
+var emailButton = document.getElementById("emailButton");
+var emailSentMessage = document.getElementById("emailSentMessage");
+var outsideSentMessage = document.getElementById("outsideSentMessage");
+
+
+window.addEventListener('click', function(e) {
+  
+    if (emailButton.contains(e.target)) {
+        console.log(emailSentMessage.style.display);
+        outsideSentMessage.style.display = 'flex';
+        console.log("Button clicked!");
+        console.log(emailSentMessage.style.display);
+
+        }
+
+        else if (!emailButton.contains(e.target)&&!emailSentMessage.contains(e.target)) {
+          console.log(emailSentMessage.style.display);
+          outsideSentMessage.style.display = 'none';
+          console.log("Button clicked!");
+          console.log(emailSentMessage.style.display);
+
+        }
+})
+
+
+
 var aboutFloatingBox = document.getElementsByClassName("centerDIV");
 var btClose= document.getElementsByClassName("btClose");
+var elements = document.getElementsByClassName('divFloat');
+
 for(let i=0;i<aboutIcon.length;i++){
     window.addEventListener('click', function (e) {
         if (aboutIcon[i].contains(e.target)) {
         aboutFloatingBox[i].style.display = 'flex';
         }
         
-        if (btClose[i].contains(e.target)) {
+        
+        if (!aboutIcon[i].contains(e.target)&&!elements[i].contains(e.target)) {
+          // Close or hide the element
             aboutFloatingBox[i].style.display = 'none';
         }
     })   
@@ -40,20 +80,24 @@ for(let i=0;i<aboutIcon.length;i++){
 
 var projects = document.getElementsByClassName("learnButton");
 var projectFloatingBox = document.getElementsByClassName("projectDetailsDIV");
+var elementsProject = document.getElementsByClassName('projectBox');
+
 for(let i=0;i<projects.length;i++){
     window.addEventListener('click', function (e) {
         if (projects[i].contains(e.target)) {
             projectFloatingBox[i].style.display = 'flex';
         }
         
-        if (btClose[i+8].contains(e.target)) {
+        else
+        if (!projects[i].contains(e.target)&&!elementsProject[i].contains(e.target)) {
+          // Close or hide the element
             projectFloatingBox[i].style.display = 'none';
         }
     })   
 }
 var navProjects= document.getElementsByClassName("navProjects");
 var navBar= document.getElementsByClassName("navigationBar");
-
+/*
 for(let i=0;i<navProjects.length;i++){
     window.addEventListener('mouseover',function(e){
         if(navProjects[i].contains(e.target)){
@@ -64,7 +108,7 @@ for(let i=0;i<navProjects.length;i++){
     })
 }
 
-
+*/
 navProjects[0].style.backgroundImage = 'url("FieldWrkr1.jpeg")';
 navProjects[1].style.backgroundImage = 'url("itxel2.jpg")';
 navProjects[2].style.backgroundImage = 'url("burst.jpg")';
@@ -80,6 +124,8 @@ var values=['url("FieldWrkr1.jpeg")',
 'url("login.jpg")'
 ];
 
+/*Slideshow, arrows, slide bar*/
+var dots= document.getElementsByClassName("dot");
 var nBL= document.getElementsByClassName("nBL");
 var nBR= document.getElementsByClassName("nBR");
 for(let i=0;i<navProjects.length;i++){
@@ -88,17 +134,32 @@ for(let i=0;i<navProjects.length;i++){
             console.log(navProjects[i].style.backgroundImage);
             if(navProjects[i].style.backgroundImage != values[i*2]){
                 navProjects[i].style.backgroundImage = values[i*2];
+                dots[i*2].classList.add("active");
+                dots[i*2+1].classList.remove("active");
+
             }else{
                 navProjects[i].style.backgroundImage = values[i*2+1];
+                dots[i*2+1].classList.add("active");
+                dots[i*2].classList.remove("active");
     
-            }
+            }    
+        }
+        else if(dots[i*2].contains(e.target)||dots[i*2+1].contains(e.target)){
+            if(dots[i*2].contains(e.target)){
+                navProjects[i].style.backgroundImage = values[i*2];
+                dots[i*2].classList.add("active");
+                dots[i*2+1].classList.remove("active");
 
+            }else if(dots[i*2+1].contains(e.target)){
+                navProjects[i].style.backgroundImage = values[i*2+1];
+                dots[i*2+1].classList.add("active");
+                dots[i*2].classList.remove("active");
     
+            }    
         }
     })
+
 }
-
-
 
 
 

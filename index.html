@@ -69,6 +69,7 @@ $(window).bind('load scroll',function() {
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 
@@ -245,7 +246,7 @@ $(window).bind('load scroll',function() {
 		<input placeholder="Subject" class="inputFields" style="margin-top:10px; margin-bottom: 10px;"></input>
 		<textarea placeholder="Message"class="inputFields message"></textarea>
 	
-		<button class="submitButton"> SUBMIT</button>
+		<button class="submitButton" id="emailButton"> SUBMIT</button>
 		</div>
 		<div id="container">
 			<div id="ball-2" class="circle"></div>
@@ -259,7 +260,7 @@ $(window).bind('load scroll',function() {
 		</div>
 
 		<div id="socialmedia">
-			<p id="signature">© Christian Leon Designs 2023</p>
+			<p id="signature">© Christian Leon Designs 2025</p>
 		
 	</div>
 	</li>
@@ -267,114 +268,135 @@ $(window).bind('load scroll',function() {
 	<div>
 	<div class="centerDIV">
 		<!-- The element which will float at the center of the screen -->
-		<div class="divFloat">
-			<input type="button" id="btClose" class="btClose" value="x" />
-			<br>
-			<div style="margin: 15px 30px;">
-				<h6>HTML and HTML5</h6>
+		<div class="divFloat" id="skillCard">
+			<div class="skillBox" style="display: flex; justify-content: center;">
+					<i class="fab fa-html5 icon1" aria-hidden="true"></i>			
+			</div>
+			<div style="margin: 25px 30px 15px; text-align: center;">
+				
+				<h6 class="skillBoxHeader">HTML/HTML5</h6>
+				<h6 class="skillBoxLabel">Concepts</h6>
 				<p >Tags, links, lists, tables, forms</p>
-				<h6>Experience Level</h6>
+				<h6 class="skillBoxLabel">Experience Level</h6>
 				<p>Advanced</p>
-				<h6>Years of Experience</h6>
+				<h6 class="skillBoxLabel">Years of Experience</h6>
 				<p>5</p>
 			</div>
 		</div>
 	</div>
 	<div class="centerDIV">
-		<div class="divFloat">
-			<input type="button" id="btClose" class="btClose" value="x" />
-			<br>
-			<div style="margin: 15px 30px;">
-				<h6>CSS</h6>
+		<div class="divFloat" id="skillCard">
+			<div class="skillBox" style="display: flex; justify-content: center;">
+					<i class="fab fa-css3-alt icon1" aria-hidden="true"></i>			
+			</div>
+			<div style="margin: 25px 30px 15px; text-align: center;">
+				
+				<h6 class="skillBoxHeader">CSS</h6>
+				<h6 class="skillBoxLabel">Concepts</h6>
 				<p >Transitions, Animations, Bootstrap</p>
-				<h6>Experience Level</h6>
+				<h6 class="skillBoxLabel">Experience Level</h6>
 				<p>Intermediate</p>
-				<h6>Years of Experience</h6>
+				<h6 class="skillBoxLabel">Years of Experience</h6>
 				<p>5</p>
 			</div>
 		</div>
 	</div>
 	<div class="centerDIV">
-		<div class="divFloat">
-			<input type="button" id="btClose" class="btClose" value="x" />
-			<br>
-			<div style="margin: 15px 30px;">
-				<h6>JavaScript</h6>
+		<div class="divFloat" id="skillCard">
+			<div class="skillBox" style="display: flex; justify-content: center;">
+					<i class="fab fa-js icon1" aria-hidden="true"></i>			
+			</div>
+			<div style="margin: 25px 30px 15px; text-align: center;">
+				
+				<h6 class="skillBoxHeader">JavaScript</h6>
+				<h6 class="skillBoxLabel">Concepts</h6>
 				<p >eventHandlers, DOM management</p>
-				<h6>Experience Level</h6>
+				<h6 class="skillBoxLabel">Experience Level</h6>
 				<p>Intermediate</p>
-				<h6>Years of Experience</h6>
+				<h6 class="skillBoxLabel">Years of Experience</h6>
 				<p>3</p>
 			</div>
 		</div>
 	</div>
 	<div class="centerDIV">
-		<div class="divFloat">
-			<input type="button" id="btClose" class="btClose" value="x" />
-			<br>
-			<div style="margin: 15px 30px;">
-				<h6>React</h6>
+		<div class="divFloat" id="skillCard">
+			<div class="skillBox" style="display: flex; justify-content: center;">
+					<i class="fab fa-react icon1" aria-hidden="true"></i>			
+			</div>
+			<div style="margin: 25px 30px 15px; text-align: center;">
+				<h6 class="skillBoxHeader">React</h6>
+				<h6 class="skillBoxLabel">Concepts</h6>
 				<p >eventHandlers, DOM management</p>
-				<h6>Experience Level</h6>
+				<h6 class="skillBoxLabel">Experience Level</h6>
 				<p>Intermediate</p>
-				<h6>Years of Experience</h6>
+				<h6 class="skillBoxLabel">Years of Experience</h6>
 				<p>1</p>
 			</div>
 		</div>
 	</div>
 	<div class="centerDIV">
 		<!-- The element which will float at the center of the screen -->
-		<div class="divFloat">
-			<input type="button" id="btClose" class="btClose" value="x" />
-			<br>
-			<div style="margin: 15px 30px;">
-				<h6>C++</h6>
+		<div class="divFloat" id="skillCard">
+			<div class="skillBox" style="display: flex; justify-content: center;">
+					<i class="fas fa-file-code icon1" aria-hidden="true"></i>			
+			</div>
+			<div style="margin: 25px 30px 15px; text-align: center;">
+				<h6 class="skillBoxHeader">C++</h6>
+				<h6 class="skillBoxLabel">Concepts</h6>
 				<p >Functions, Object Oriented Programming</p>
-				<h6>Experience Level</h6>
+				<h6 class="skillBoxLabel">Experience Level</h6>
 				<p>Advanced</p>
-				<h6>Years of Experience</h6>
+				<h6 class="skillBoxLabel">Years of Experience</h6>
 				<p>4</p>
 			</div>
 		</div>
 	</div>
 	<div class="centerDIV">
-		<div class="divFloat">
-			<input type="button" id="btClose" class="btClose" value="x"/>
-			<br>
-			<div style="margin: 15px 30px;">
-				<h6>Java</h6>
+		<div class="divFloat" id="skillCard">
+			<div class="skillBox" style="display: flex; justify-content: center;">
+					<i class="fab fa-js icon1" aria-hidden="true"></i>			
+			</div>
+			<div style="margin: 25px 30px 15px; text-align: center;">
+				<h6 class="skillBoxHeader">Java</h6>
+				<h6 class="skillBoxLabel">Concepts</h6>
 				<p >Class, functions</p>
-				<h6>Experience Level</h6>
+				<h6 class="skillBoxLabel">Experience Level</h6>
 				<p>Intermediate</p>
-				<h6>Years of Experience</h6>
+				<h6 class="skillBoxLabel">Years of Experience</h6>
 				<p>1</p>
 			</div>
 		</div>
 	</div>
+	
 	<div class="centerDIV">
-		<div class="divFloat">
-			<input type="button" id="btClose" class="btClose" value="x" />
-			<br>
-			<div style="margin: 15px 30px;">
-				<h6>Python</h6>
+		<div class="divFloat" id="skillCard">
+			<div class="skillBox" style="display: flex; justify-content: center;">
+					<i class="fab fa-python icon1" aria-hidden="true"></i>			
+			</div>
+			<div style="margin: 25px 30px 15px; text-align: center;">
+				<h6 class="skillBoxHeader">Python</h6>
+				<h6 class="skillBoxLabel">Concepts</h6>
 				<p >Functions</p>
-				<h6>Experience Level</h6>
+				<h6 class="skillBoxLabel">Experience Level</h6>
 				<p>Intermediate</p>
-				<h6>Years of Experience</h6>
+				<h6 class="skillBoxLabel">Years of Experience</h6>
 				<p>1</p>
 			</div>
 		</div>
 	</div>
 	<div class="centerDIV">
-		<div class="divFloat">
-			<input type="button" id="btClose" class="btClose" value="x" />
-			<br>
-			<div style="margin: 15px 30px;">
-				<h6>MySQL</h6>
+		<div class="divFloat" id="skillCard">
+			
+			<div class="skillBox" style="display: flex; justify-content: center;">
+					<i class="fas fa-database icon1" aria-hidden="true"></i>			
+			</div>
+			<div style="margin: 25px 30px 15px; text-align: center;">
+				<h6 class="skillBoxHeader">MySQL</h6>
+				<h6 class="skillBoxLabel">Concepts</h6>
 				<p >Relational Data</p>
-				<h6>Experience Level</h6>
+				<h6 class="skillBoxLabel">Experience Level</h6>
 				<p>Intermediate</p>
-				<h6>Years of Experience</h6>
+				<h6 class="skillBoxLabel">Years of Experience</h6>
 				<p>2</p>
 			</div>
 		</div>
@@ -384,145 +406,204 @@ $(window).bind('load scroll',function() {
 	<div>
 		<div class="projectDetailsDIV">
 			<!-- The element which will float at the center of the screen -->
-			<div class="divFloat">
-				<input type="button" id="btClose" class="btClose" value="x"/>
-				<br><br>
-				<ul>
+			<div class="divFloat projectBox">
+				<div class="projectHeader">
+					<i class="fa-solid fa-diagram-project iconProject"></i>
+					<h6 class="fontHeader" > | FieldWorker App | </h6>
+					<i class="fa-solid fa-diagram-project iconProject" style="transform: scaleX(-1);"></i>
+
+				</div>
+				<div style="margin: 50px 60px;">
+				<ul style="padding: 0px 0px 20px 0px;">
 					<li class="horizontalList">
 					<div class="navProjects" id="project1">
 						<div class="navigationBar">
-						<div class="nBL" id="nBL"><</div>
-						<div class="nBR" id="nBR">></div>
+						<div class="nBL" id="nBL">
+							<i class="fa-solid fa-caret-left iconTriangle"></i>
 						</div>
+						<div class="nBR" id="nBR">
+							<i class="fa-solid fa-caret-right iconTriangle"></i>
+						</div>
+						</div>
+
+						  <div class="slide-dots">
+    						<span class="dot active"></span>
+    						<span class="dot"></span>
+  						  </div>
+
 					</div>
 					</li>
 					<li class="horizontalList" style=" vertical-align: top;">
-					<div style="margin-top: 50px; margin-left: 25px; margin-right:50px">
-						<h6>Company</h6>
+					<div style="margin-top: 0px; margin-left: 45px; margin-right:35px">
+						<h6 class="skillBoxLabel">Company</h6>
 						<p>AnalytIQ</p>
-						<h6>Front End</h6>
+						<h6 class="skillBoxLabel">Front End</h6>
 						<p >#reactNative #javascript #ajax <br>#html #css</p>
-						<h6>Back End</h6>
+						<h6 class="skillBoxLabel">Back End</h6>
 						<p >#mySQL</p>
-						<h6>Other Technologies</h6>
+						<h6 class="skillBoxLabel">Other Technologies</h6>
 						<p >#git #figma</p>
+						<br><br>
 						<a href="https://apps.apple.com/us/app/fieldworker/id1529488939" target="_blank">See on Appstore</a>
 						<br><br>
 						<a href="#" class="fa fa-github" id="smIcon" style="color:#6371dd" onclick="window.open('https://github.com/analytiq-v/Analytiq_app','_blank')"></a>
 					</div>
 					</li>
 				</ul>
+				</div>
 			</div>
 		</div>
 		<div class="projectDetailsDIV">
-			<div class="divFloat">
-				<input type="button" id="btClose" class="btClose" value="x" />
-				<br><br>
-				<ul >
+			<div class="divFloat projectBox">
+				<div class="projectHeader">
+					<i class="fa-solid fa-diagram-project iconProject"></i>
+					<h6 class="fontHeader" > | Itxel Cosmetics | </h6>
+					<i class="fa-solid fa-diagram-project iconProject" style="transform: scaleX(-1);"></i>
+
+				</div>
+				<div style="margin: 50px 60px;">
+				<ul style="padding: 0px 0px 20px 0px;">
 					<li class="horizontalList">
 					<div class="navProjects" id="project2">
 						<div class="navigationBar">
-						<div class="nBL" id="nBL"><</div>
-						<div class="nBR" id="nBR">></div>
+						<div class="nBL" id="nBL">
+							<i class="fa-solid fa-caret-left iconTriangle"></i>
 						</div>
+						<div class="nBR" id="nBR">
+							<i class="fa-solid fa-caret-right iconTriangle"></i>
+						</div>
+						</div>
+
+						  <div class="slide-dots">
+    						<span class="dot active"></span>
+    						<span class="dot"></span>
+  						  </div>
 					</div>
 					</li>
 					<li class="horizontalList" style=" vertical-align: top;">
-					<div style="margin-top: 50px; margin-left: 25px; margin-right:50px">
-						<h6>Company</h6>
+					<div style="margin-top: 0px; margin-left: 45px; margin-right:35px">
+						<h6 class="skillBoxLabel">Company</h6>
 						<p>ITXEL Cosmetics</p>
-						<h6>Front End</h6>
+						<h6 class="skillBoxLabel">Front End</h6>
 						<p >#html #css<br>#shopify</p>
-						<h6>Back End</h6>
+						<h6 class="skillBoxLabel">Back End</h6>
 						<p >#mySQL</p>
-						<h6>Other Technologies</h6>
+						<h6 class="skillBoxLabel">Other Technologies</h6>
 						<p >#figma #procreate</p>
 					</div>
 					</li>
 				</ul>
+				</div>
 			</div>
 		</div>
 		<div class="projectDetailsDIV">
-			<div class="divFloat">
-				<input type="button" id="btClose" class="btClose" value="x" />
-				<br><br>
-				<ul >
+			<div class="divFloat projectBox">
+				<div class="projectHeader">
+					<i class="fa-solid fa-diagram-project iconProject"></i>
+					<h6 class="fontHeader" > | Space Shooters | </h6>
+					<i class="fa-solid fa-diagram-project iconProject" style="transform: scaleX(-1);"></i>
+
+				</div>
+				<div style="margin: 50px 60px;">
+				<ul style="padding: 0px 0px 20px 0px;">
 					<li class="horizontalList">
 					<div class="navProjects" id="project3">
 						<div class="navigationBar">
-						<div class="nBL" id="nBL"><</div>
-						<div class="nBR" id="nBR">></div>
+						<div class="nBL" id="nBL">
+							<i class="fa-solid fa-caret-left iconTriangle"></i>
 						</div>
+						<div class="nBR" id="nBR">
+							<i class="fa-solid fa-caret-right iconTriangle"></i>
+						</div>
+						</div>
+
+						  <div class="slide-dots">
+    						<span class="dot active"></span>
+    						<span class="dot"></span>
+  						  </div>
 					</div>
 					</li>
 					<li class="horizontalList" style=" vertical-align: top;">
-					<div style="margin-top: 50px; margin-left: 25px; margin-right:50px">
-						<h6>Company</h6>
+					<div style="margin-top: 0px; margin-left: 45px; margin-right:35px">
+						<h6 class="skillBoxLabel">Company</h6>
 						<p>Website Portfolio</p>
-						<h6>Front End</h6>
+						<h6 class="skillBoxLabel">Front End</h6>
 						<p >C++</p>
-						<h6>Back End</h6>
+						<h6 class="skillBoxLabel">Back End</h6>
 						<p >C++ SQL</p>
-						<h6>Other Technologies</h6>
+						<h6 class="skillBoxLabel">Other Technologies</h6>
 						<p >#procreate</p>
 					</div>
 					</li>
 				</ul>
+				</div>
 			</div>
 		</div>
 		<div class="projectDetailsDIV">
-			<div class="divFloat">
-				<input type="button" id="btClose" class="btClose" value="x" />
-				<br><br>
-				<ul >
+			<div class="divFloat projectBox">
+				<div class="projectHeader">
+					<i class="fa-solid fa-diagram-project iconProject"></i>
+					<h6 class="fontHeader" > | Exquisite Staffing | </h6>
+					<i class="fa-solid fa-diagram-project iconProject" style="transform: scaleX(-1);"></i>
+
+				</div>
+				<div style="margin: 50px 60px;">
+				<ul style="padding: 0px 0px 20px 0px;">
 					<li class="horizontalList">
 					<div class="navProjects" id="project4">
 						<div class="navigationBar">
-						<div class="nBL" id="nBL"><</div>
-						<div class="nBR" id="nBR">></div>
+						<div class="nBL" id="nBL">
+							<i class="fa-solid fa-caret-left iconTriangle"></i>
 						</div>
+						<div class="nBR" id="nBR">
+							<i class="fa-solid fa-caret-right iconTriangle"></i>
+						</div>
+						</div>
+
+						  <div class="slide-dots">
+    						<span class="dot active"></span>
+    						<span class="dot"></span>
+  						  </div>
 					</div>
 					</li>
 					<li class="horizontalList" style=" vertical-align: top;">
-					<div style="margin-top: 50px; margin-left: 25px; margin-right:50px">
-						<h6>Company</h6>
+					<div style="margin-top: 0px; margin-left: 45px; margin-right:35px">
+						<h6 class="skillBoxLabel">Company</h6>
 						<p>Exquisite Staffing</p>
-						<h6>Front End</h6>
+						<h6 class="skillBoxLabel">Front End</h6>
 						<p >#html #css<br>#javascript #ajax</p>
-						<h6>Back End</h6>
+						<h6 class="skillBoxLabel">Back End</h6>
 						<p >#mySQL #php</p>
-						<h6>Other Technologies</h6>
+						<h6 class="skillBoxLabel">Other Technologies</h6>
 						<p >#figma</p>
 					</div>
 					</li>
 				</ul>
+				</div>
 			</div>
 		</div>
 		</div>
 		
 		<div>
 		<div class="projectDetailsDIV">
-			<div class="divFloat">
+			<div class="divFloat projectBox">
 				<div class="zoomIllustration" id="illustration1">
-					<input type="button" id="btClose" class="btClose" style="margin:10px;" value="x" />
 				</div>
 			</div>
 		</div>
 		<div class="projectDetailsDIV">
-			<div class="divFloat">
+			<div class="divFloat projectBox">
 				<div class="zoomIllustration" id="illustration3">
-					<input type="button" id="btClose" class="btClose" style="margin:10px;" value="x" />
 				</div>
 			</div>
 		</div>
 		<div class="projectDetailsDIV">
-			<div class="divFloat">
+			<div class="divFloat projectBox">
 				<div class="zoomIllustration" id="illustration2">
-					<input type="button" id="btClose" class="btClose" style="margin:10px;" value="x" />
 				</div>
 			</div>
 		</div>
-		<div class="projectDetailsDIV">
+		<div class="projectDetailsDIV projectBox">
 			<div class="divFloat">
 				<div class="zoomIllustration" id="illustration4">
 					<input type="button" id="btClose" class="btClose" style="margin:10px;" value="x" />
@@ -531,6 +612,22 @@ $(window).bind('load scroll',function() {
 		</div>
 		
 		</div>
+	
+	<div class="centerDIV" id="outsideSentMessage">
+		<!-- The element which will float at the center of the screen -->
+		<div class="divFloat" id="emailSentMessage">
+			<div class="projectHeader">
+					<i class="fa-solid fa-diagram-project iconProject"></i>
+					<h6 class="fontHeader" > | Email sent | </h6>
+					<i class="fa-solid fa-diagram-project iconProject" style="transform: scaleX(-1);"></i>
+
+				</div>
+			<div style="margin: 30px 30px 35px; text-align: center;">
+				<h6 class="skillBoxLabel">Thanks for sending a message. I will contact you ASAP!</h6>
+			</div>
+		</div>
+	</div>
+
 
 </div>
 

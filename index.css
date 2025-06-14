@@ -3,7 +3,7 @@
     --main2:#e2e5ff;
     --main3:#c1c8fd;
     --main4:#f8fbfb;
-    --accent1:#ddce63;
+    --accent1:#FCD250;
     --accent2:#Dc7f86;
     --accent3:#eab2b6;
     --accent4:#f0c9cc;
@@ -47,6 +47,7 @@ body::after{
     to   { opacity: 1;
         transform: translate3d(0, 0, 0);}
 }
+
 #floatingBox{
     background:var(--dark1);
     width: calc( 100% - 350px );
@@ -57,7 +58,6 @@ body::after{
     z-index:0;
     white-space:nowrap;
     text-align: right;
-    //vertical-align:middle;
     font-size:14px;
     position:relative;
     float:right;
@@ -65,6 +65,29 @@ body::after{
     padding-right:10px;
 }
 
+.skillBoxLabel{
+    font-size: 16px;
+    color: var(--dark1);
+}
+.skillBoxHeader{
+    font-size: 20px; 
+    color:white; 
+    background-color: #6371dd; 
+    padding:5px; 
+    border-radius: 7.5px;
+}
+.projectHeader{
+    background-color: #6371dd; 
+    //padding-left:25px;
+    height:100px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fontHeader{
+    font-size: 30px; 
+    color:white; 
+}
 #nameBox{
     float:left;
     width:350px;
@@ -344,8 +367,26 @@ ul{
 li.horizontalList{
     display:inline-block;
 }
+
+.skillBox{
+    background-color: var(--fontLight);
+    background-color: var(--main3);
+    
+    margin: auto;
+    //width: 95%;
+    width:100%;
+    height: 160px;
+    //margin-top: 7px;
+    padding-top: 30px;
+    position:relative;
+    display: inline-block;
+    vertical-align: top;
+  //border-radius:5%;
+    font-weight:500;
+    font-size:19px;
+    overflow:hidden;
+}
 /*
-div.skillBox{
     position:relative;
     display:inline-block;   
     background-color:white;
@@ -446,13 +487,17 @@ div.skillBox:hover::after{
     font-size:70px;
      
 }
-
+.centerIcon{
+    margin-left: auto;
+  margin-right: auto;
+  //color:#ddce63;
+}
 /*
 .icon1:hover{
 	color:var(--dark1);
 }
 */
-.centerDIV,.projectDetailsDIV {
+.centerDIV,.projectDetailsDIV, #outisdeSentMessage{
     position: fixed;
     top: 0;
     left: 0;
@@ -467,15 +512,22 @@ div.skillBox:hover::after{
         background-color: #FFF;
         border: solid 1px #999;
         color: #000;
-        width: auto;
+        width: 300px;
         height: auto;
-        padding: 20px 20px;
+        padding: 0px 0px 0px 0px;
         -webkit-border-radius: 10px;
         -webkit-box-orient: vertical;
         -webkit-transition: 200ms -webkit-transform;
         box-shadow: 0 4px 23px 5px rgba(0, 0, 0, 0.2), 0 2px 6px rgba(0, 0, 0, 0.15);
         display: block;
+        overflow:hidden;
     }
+.projectBox{
+    width:auto;
+    border-color:gray;
+    border-style: solid;
+
+}
 /* Projects Section**********************************************/
 
 #projects{
@@ -509,16 +561,13 @@ div.navProjects{
     position:relative;
     display:inline-block;   
     background-color:var(--fontLight);
-    margin:5% 5px;
+    //margin:5% 5px;
     background-size: contain;
     background-repeat:no-repeat;
 }
 div.projects:hover .tags{
     visibility: visible;
     opacity:1;
-}
-div.projects:hover{
-   // top:-10px;
 }
 
 p.tags{
@@ -540,6 +589,7 @@ p.tags{
     background: rgba(0,0,0,0) url("FieldWrkr1.jpeg");
     background-size: contain;
     background-size: 100% 100%;
+    
 }
 .project1{
     animation: slides1 7.5s ease infinite alternate;
@@ -878,31 +928,77 @@ div.zoomIllustration{
     opacity: 0.7;
 }
 .nBL, .nBR{
-    height:30px;
-    width:20px;
+    height:45px;
+    width:25px;
     float:right;
     border:none;
-    background:var(--dark1);
+    background:#696969;
     color:var(--fontLight);
     border-radius: 5px;
-    padding-top: 2px;
+    //padding-top: 2px;
     text-align: center;
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
     margin-top:50%;
     transform:translate(0,-50%);
     margin-right:5px;
     transition: opacity .4s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
+.iconTriangle{
+    font-size: 20px;
+}
+.iconProject{
+    color:white;
+    font-size: 22px;
+    margin: 0px 15px;
+}
 .nBL:hover, .nBR:hover{
-    opacity: 0.7;
+   
+
 }
 .nBL{
     float: left;
     margin-left:5px;
 }
+
+.slide-dots {
+    position: absolute;
+    bottom: 10px; /* Position at the bottom */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot.active {
+  background-color: #717171;
+}
+
+.dot:hover {
+    background-color: #555;
+} 
+
 .navigationBar{
-    display: none;	/* keep the element hidden */
+    //display: none;	/* keep the element hidden */
+    
+    opacity: 0.5;
+    transition: opacity .4s ease;
+}
+.navigationBar:hover{
+    opacity: 1.0;
     transition: opacity .4s ease;
 }
 
