@@ -296,11 +296,7 @@ ul{
 }
 
 #home{
-    //background-image: url("background.PNG");
-    //background-size: contain;
-    //ackground-repeat: no-repeat;
-    //background-position: center center;
-    //opacity:0.8;
+ 
 }
 
 
@@ -325,11 +321,9 @@ ul{
     position:relative;
     background-repeat:no-repeat;
     width:80%;
-    //background-color: var(--main2);
     z-index:0;
     margin:auto;
     margin-top:30px;
-    //border-left: solid #9262dd;
     border-style:solid;
     border-image: linear-gradient(#9262dd,#c1c8fd) 0 100%;
     border-left-width: 3.5px;
@@ -357,7 +351,6 @@ ul{
 
 #skillsGroup{
     width:100%;
-    //background-color: var(--main3);
     background-color: white;
     text-align:center;
     position:relative;
@@ -373,15 +366,12 @@ li.horizontalList{
     background-color: var(--main3);
     
     margin: auto;
-    //width: 95%;
     width:100%;
     height: 160px;
-    //margin-top: 7px;
     padding-top: 30px;
     position:relative;
     display: inline-block;
     vertical-align: top;
-  //border-radius:5%;
     font-weight:500;
     font-size:19px;
     overflow:hidden;
@@ -438,10 +428,7 @@ div.skillBox:hover::after{
     vertical-align: top;
     border-radius:5%;
     font-weight:500;
-    //text-align:center;
     font-size:19px;
-    //margin-top:10px;
-    //color:#303030;
 
 }
 .box::after{
@@ -490,7 +477,6 @@ div.skillBox:hover::after{
 .centerIcon{
     margin-left: auto;
   margin-right: auto;
-  //color:#ddce63;
 }
 /*
 .icon1:hover{
@@ -561,7 +547,6 @@ div.navProjects{
     position:relative;
     display:inline-block;   
     background-color:var(--fontLight);
-    //margin:5% 5px;
     background-size: contain;
     background-repeat:no-repeat;
 }
@@ -573,7 +558,6 @@ div.projects:hover .tags{
 p.tags{
     position:absolute;
     color:var(--fontLight);
-    //font-weight:bold;
     margin: auto calc(50% - 125px);
     padding-top:60px;
     text-align:center;
@@ -609,7 +593,7 @@ p.tags{
 
 
 .project2, #project2{
-    background: rgba(0,0,0,0) url("itxel.jpg");
+    background: rgba(0,0,0,0) url("Recipe1.png");
     background-size: contain;
     background-size: 100% 100%;
 }
@@ -619,24 +603,24 @@ p.tags{
 }
 @keyframes slides2{
     0%,20% {
-        background: rgba(0,0,0,0) url("itxel.jpg");
+        background: rgba(0,0,0,0) url("Recipe1.png");
         background-size: contain;
         background-size: 100% 100%;
     }
     30%,70%{
-        background: rgba(0,0,0,0) url("itxel2.jpg");
+        background: rgba(0,0,0,0) url("Recipe2.png");
         background-size: contain;
         background-size: 100% 100%;
     }
     80%, 100% {
-        background: rgba(0,0,0,0) url("itxel3.jpg");
+        background: rgba(0,0,0,0) url("Recipe3.png");
         background-size: contain;
         background-size: 100% 100%;
     }
 }
 
 .project3, #project3{
-    background: rgba(0,0,0,0) url("burst.jpg");
+    background: rgba(0,0,0,0) url("Weather1.png");
     background-size: contain;
     background-size: 100% 100%;
 }
@@ -644,20 +628,25 @@ p.tags{
     animation: slides3 7.5s ease infinite alternate;
 }
 @keyframes slides3{
-    0%,40% {
-        background: rgba(0,0,0,0) url("burst.jpg");
+    0%,20% {
+        background: rgba(0,0,0,0) url("Weather1.png");
         background-size: contain;
         background-size: 100% 100%;
     }
-    60%, 100% {
-        background: rgba(0,0,0,0) url("FieldWrkr1.jpeg");
+    30%, 70% {
+        background: rgba(0,0,0,0) url("Weather2.png");
+        background-size: contain;
+        background-size: 100% 100%;
+    }
+    80%, 100% {
+        background: rgba(0,0,0,0) url("Weather3.png");
         background-size: contain;
         background-size: 100% 100%;
     }
 }
 
 .project4, #project4{
-    background: rgba(0,0,0,0) url("itxel3.jpg");
+    background: rgba(0,0,0,0) url("itxel.jpg");
     background-size: contain;
     background-size: 100% 100%;
 }
@@ -666,12 +655,12 @@ p.tags{
 }
 @keyframes slides4{
     0%,40% {
-        background: rgba(0,0,0,0) url("itxel3.jpg");
+        background: rgba(0,0,0,0) url("itxel.jpg");
         background-size: contain;
         background-size: 100% 100%;
     }
     60%, 100% {
-        background: rgba(0,0,0,0) url("login.jpg");
+        background: rgba(0,0,0,0) url("itxel2.jpg");
         background-size: contain;
         background-size: 100% 100%;
     }
@@ -737,7 +726,6 @@ div.zoomIllustration{
     margin:auto;
     margin-bottom:60px;
     border-top:10px solid var(--main3);
-    //border-bottom:10px solid var(--main3);
     padding-left:5%;
     padding-right:5%;
 }
@@ -747,7 +735,6 @@ div.zoomIllustration{
     position:relative;
     padding-left:20px;
     border:none;
-    //border-bottom: 2px solid var(--accent1);
     display:block;
     height:40px;
     width:calc(100% - 0px);
@@ -770,26 +757,19 @@ div.zoomIllustration{
     margin:10px auto;
     background-color:#f1f9f9;
     position:relative;
-    //padding-left:20px;
     border:none;
-    //border-bottom: 2px solid var(--accent1);
-    //display:block;
     height:40px;
     width:calc(100% - 0px);
-    //box-sizing:border-box;
     display:flex;
     flex-direction:column;
     outline:none;
     justify-content:flex-end;
-    //vertical-align:center;
 }
 
 
 .inputHolder::after{
     content:'';
     display:block;
-    //position:bottom;
-    //margin:auto;
     width:0;
     height:40px;
     background:transparent;
@@ -799,21 +779,13 @@ div.zoomIllustration{
  
 .inputHolder:hover::after,.inputHolder:focus:after{
     width:100%;
-    //height:100%;
-    //background:var(--accent1); 
     border-bottom:3px solid var(--accent1);
     outline:none;
 }
 .editable:empty:before{
     content: attr(data-placeholder);
 }
-#placeholderIn{
-    //justify-content: center;
-    //vertical-align: right;
-    //text-align: center;
-    //height:100%;
-//outline:none;
-}
+
 .message{
     height:150px;
     padding-top:13px;
@@ -935,7 +907,6 @@ div.zoomIllustration{
     background:#696969;
     color:var(--fontLight);
     border-radius: 5px;
-    //padding-top: 2px;
     text-align: center;
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
     margin-top:50%;
@@ -992,7 +963,6 @@ div.zoomIllustration{
 } 
 
 .navigationBar{
-    //display: none;	/* keep the element hidden */
     
     opacity: 0.5;
     transition: opacity .4s ease;
@@ -1018,21 +988,17 @@ div.zoomIllustration{
 }
 .roundButton{
     background-color: #303030;
-    //-webkit-width: 50px;
     width: 50px;
     height:50px;
     padding:0;
-    //-webkit-border-radius:25px;
     border-radius:50%;
     background: #303030;
     border:none;
     outline:none;
     color: var(--fontLight);
     font-size:36px;
-    //-webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     transition:.3s;
-    //-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     margin:5px 0px;
 }
 .roundButton:focus{
@@ -1115,10 +1081,8 @@ div.zoomIllustration{
   @media (max-device-width:450px) {
 
     #home{
-        //padding-bottom: 15vh;
     }
     #headerHome{
-       // height:70vh;
     }
     #floatingBoxWrapper{
         height:200px;

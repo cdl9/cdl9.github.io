@@ -110,18 +110,18 @@ for(let i=0;i<navProjects.length;i++){
 
 */
 navProjects[0].style.backgroundImage = 'url("FieldWrkr1.jpeg")';
-navProjects[1].style.backgroundImage = 'url("itxel2.jpg")';
-navProjects[2].style.backgroundImage = 'url("burst.jpg")';
-navProjects[3].style.backgroundImage = 'url("mrc.jpeg")';
+navProjects[1].style.backgroundImage = 'url("Recipe1.png")';
+navProjects[2].style.backgroundImage = 'url("weather1.png")';
+navProjects[3].style.backgroundImage = 'url("itxel.jpg")';
 
 var values=['url("FieldWrkr1.jpeg")',
 'url("FieldWrkr2.png")',
-'url("itxel2.jpg")',
-'url("itxel3.jpg")',
-'url("burst.jpg")',
+'url("Recipe1.png")',
+'url("Recipe2.png")',
+'url("weather1.png")',
+'url("weather2.png")',
 'url("itxel.jpg")',
-'url("mrc.jpeg")',
-'url("login.jpg")'
+'url("itxel2.jpg")'
 ];
 
 /*Slideshow, arrows, slide bar*/
