@@ -111,7 +111,7 @@ for(let i=0;i<navProjects.length;i++){
 */
 navProjects[0].style.backgroundImage = 'url("exq1.png")';
 navProjects[1].style.backgroundImage = 'url("FieldWrkr1.jpeg")';
-navProjects[2].style.backgroundImage = 'url("Recipe1.png")';
+navProjects[2].style.backgroundImage = 'url("Recipe1.PNG")';
 navProjects[3].style.backgroundImage = 'url("weather1.png")';
 
 var values=[
@@ -119,8 +119,8 @@ var values=[
 'url("exq2.png")',
 'url("FieldWrkr1.jpeg")',
 'url("FieldWrkr2.png")',
-'url("Recipe1.png")',
-'url("Recipe2.png")',
+'url("Recipe1.PNG")',
+'url("Recipe2.PNG")',
 'url("weather1.png")',
 'url("weather2.png")',
 
