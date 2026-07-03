@@ -29,8 +29,6 @@ body::after{
 
 #floatingBoxWrapper{
     height:100px;
-    //padding-top: 25px;
-    //padding-bottom: 135px;
     width:100%;
     position:sticky;
     -webkit-position:sticky;
@@ -78,7 +76,6 @@ body::after{
 }
 .projectHeader{
     background-color: #6371dd; 
-    //padding-left:25px;
     height:100px; 
     display: flex;
     justify-content: center;
@@ -99,7 +96,6 @@ body::after{
 }
 #nameLink{
     position:relative;
-    //text-align:center;
     color:var(--fontLight);
     font-weight:500;
     margin: 27px 20px;
