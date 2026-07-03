@@ -121,7 +121,7 @@ var values=[
 'url("FieldWrkr2.png")',
 'url("Recipe1.png")',
 'url("Recipe2.png")',
-'url("weather1.png")',
+'url("Weather1.png")',
 'url("weather2.png")',
 
 ];
