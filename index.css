@@ -570,7 +570,7 @@ p.tags{
 }
  
 .project1, #project1{
-    background: rgba(0,0,0,0) url("exq1.PNG");
+    background: rgba(0,0,0,0) url("exq1.png");
     background-size: contain;
     background-size: 100% 100%;
     
@@ -581,12 +581,12 @@ p.tags{
 @keyframes slides1{
 
     0%,40% {
-        background: rgba(0,0,0,0) url("exq1.PNG");
+        background: rgba(0,0,0,0) url("exq1.png");
         background-size: contain;
         background-size: 100% 100%;
     }
     60%, 100% {
-        background: rgba(0,0,0,0) url("exq2.PNG");
+        background: rgba(0,0,0,0) url("exq2.png");
         background-size: contain;
         background-size: 100% 100%;
     }
@@ -640,7 +640,7 @@ p.tags{
 }
 
 .project4, #project4{
-    background: rgba(0,0,0,0) url("Weather1.png");
+    background: rgba(0,0,0,0) url("weather1.png");
     background-size: contain;
     background-size: 100% 100%;
 }
@@ -649,17 +649,17 @@ p.tags{
 }
 @keyframes slides3{
     0%,20% {
-        background: rgba(0,0,0,0) url("Weather1.png");
+        background: rgba(0,0,0,0) url("weather1.png");
         background-size: contain;
         background-size: 100% 100%;
     }
     30%, 70% {
-        background: rgba(0,0,0,0) url("Weather2.png");
+        background: rgba(0,0,0,0) url("weather2.png");
         background-size: contain;
         background-size: 100% 100%;
     }
     80%, 100% {
-        background: rgba(0,0,0,0) url("Weather3.png");
+        background: rgba(0,0,0,0) url("weather3.png");
         background-size: contain;
         background-size: 100% 100%;
     }
