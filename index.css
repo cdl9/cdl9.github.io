@@ -570,7 +570,7 @@ p.tags{
 }
  
 .project1, #project1{
-    background: rgba(0,0,0,0) url("FieldWrkr1.jpeg");
+    background: rgba(0,0,0,0) url("exq1.PNG");
     background-size: contain;
     background-size: 100% 100%;
     
@@ -579,7 +579,29 @@ p.tags{
     animation: slides1 7.5s ease infinite alternate;
 }
 @keyframes slides1{
+
     0%,40% {
+        background: rgba(0,0,0,0) url("exq1.PNG");
+        background-size: contain;
+        background-size: 100% 100%;
+    }
+    60%, 100% {
+        background: rgba(0,0,0,0) url("exq2.PNG");
+        background-size: contain;
+        background-size: 100% 100%;
+    }
+}
+
+.project2, #project2{
+    background: rgba(0,0,0,0) url("FieldWrkr1.jpeg");
+    background-size: contain;
+    background-size: 100% 100%;
+}
+.project2{
+    animation: slides4 7.5s ease infinite alternate;
+}
+@keyframes slides4{
+        0%,40% {
         background: rgba(0,0,0,0) url("FieldWrkr1.jpeg");
         background-size: contain;
         background-size: 100% 100%;
@@ -590,14 +612,12 @@ p.tags{
         background-size: 100% 100%;
     }
 }
-
-
-.project2, #project2{
+.project3, #project3{
     background: rgba(0,0,0,0) url("Recipe1.png");
     background-size: contain;
     background-size: 100% 100%;
 }
-.project2{
+.project3{
     animation: slides2 15s ease infinite alternate;
     animation-delay:0s;
 }
@@ -619,12 +639,12 @@ p.tags{
     }
 }
 
-.project3, #project3{
+.project4, #project4{
     background: rgba(0,0,0,0) url("Weather1.png");
     background-size: contain;
     background-size: 100% 100%;
 }
-.project3{
+.project4{
     animation: slides3 7.5s ease infinite alternate;
 }
 @keyframes slides3{
@@ -645,26 +665,7 @@ p.tags{
     }
 }
 
-.project4, #project4{
-    background: rgba(0,0,0,0) url("exq1.PNG");
-    background-size: contain;
-    background-size: 100% 100%;
-}
-.project4{
-    animation: slides4 7.5s ease infinite alternate;
-}
-@keyframes slides4{
-    0%,40% {
-        background: rgba(0,0,0,0) url("exq1.PNG");
-        background-size: contain;
-        background-size: 100% 100%;
-    }
-    60%, 100% {
-        background: rgba(0,0,0,0) url("exq2.PNG");
-        background-size: contain;
-        background-size: 100% 100%;
-    }
-}
+
 
 
 /*Illustrations********************/

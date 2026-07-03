@@ -109,19 +109,21 @@ for(let i=0;i<navProjects.length;i++){
 }
 
 */
-navProjects[0].style.backgroundImage = 'url("FieldWrkr1.jpeg")';
-navProjects[1].style.backgroundImage = 'url("Recipe1.png")';
-navProjects[2].style.backgroundImage = 'url("weather1.png")';
-navProjects[3].style.backgroundImage = 'url("exq1.png")';
+navProjects[0].style.backgroundImage = 'url("exq1.png")';
+navProjects[1].style.backgroundImage = 'url("FieldWrkr1.jpeg")';
+navProjects[2].style.backgroundImage = 'url("Recipe1.png")';
+navProjects[3].style.backgroundImage = 'url("weather1.png")';
 
-var values=['url("FieldWrkr1.jpeg")',
+var values=[
+'url("exq1.png")',
+'url("exq2.png")',
+'url("FieldWrkr1.jpeg")',
 'url("FieldWrkr2.png")',
 'url("Recipe1.png")',
 'url("Recipe2.png")',
 'url("weather1.png")',
 'url("weather2.png")',
-'url("exq1.png")',
-'url("exq2.png")'
+
 ];
 
 /*Slideshow, arrows, slide bar*/
