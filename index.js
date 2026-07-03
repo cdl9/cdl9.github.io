@@ -109,20 +109,20 @@ for(let i=0;i<navProjects.length;i++){
 }
 
 */
-navProjects[0].style.backgroundImage = 'url("exq1.png")';
+navProjects[0].style.backgroundImage = 'url("exq1.PNG")';
 navProjects[1].style.backgroundImage = 'url("FieldWrkr1.jpeg")';
 navProjects[2].style.backgroundImage = 'url("Recipe1.png")';
-navProjects[3].style.backgroundImage = 'url("weather1.png")';
+navProjects[3].style.backgroundImage = 'url("Weather1.png")';
 
 var values=[
-'url("exq1.png")',
-'url("exq2.png")',
+'url("exq1.PNG")',
+'url("exq2.PNG")',
 'url("FieldWrkr1.jpeg")',
 'url("FieldWrkr2.png")',
 'url("Recipe1.png")',
 'url("Recipe2.png")',
 'url("Weather1.png")',
-'url("weather2.png")',
+'url("Weather2.png")',
 
 ];
 
