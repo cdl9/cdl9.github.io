@@ -508,7 +508,6 @@ div.skillBox:hover::after{
     }
 .projectBox{
     width:auto;
-    //border-color:gray;
     border-style: solid;
 
 }
@@ -547,7 +546,6 @@ div.navProjects{
     background-color:var(--fontLight);
     background-size: contain;
     background-repeat:no-repeat;
-    //border:1px solid rgba(211,211,211,0.2);
     border-radius: 10px;
 }
 div.projects:hover .tags{
