@@ -70,6 +70,8 @@ $(window).bind('load scroll',function() {
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
 </head>
 
 
@@ -107,7 +109,10 @@ $(window).bind('load scroll',function() {
 				</canvas>
 				<p class="bigTitle">Welcome to my page!</p>
 				<p class="subTitle">Personal Portfolio Website</p>
-				<button class="submitButton" id="downloadButton" onclick="window.open('Christian_Leon_Junior_Developer_EB.pdf','_blank')">DOWNLOAD CV</button>
+				<div class="rowDivs">
+					<div><button class="submitButton" id="downloadButton" onclick="window.open('Christian_Leon_Junior_Developer_EB.pdf','_blank')">DOWNLOAD CV</button></div>
+					<div><a class="submitButton" id="projectButton" href="#projects" >PROJECTS</a></div>
+				</div>
 			</div>
 				
 			
@@ -122,7 +127,7 @@ $(window).bind('load scroll',function() {
 				<p class="name " id="subtitle4"><span class="name highlightText">02.</span> About me</p>
 				<p class="text"> I'm a
 				<span class="text highlightText">Software Developer</span>
-					in NYC. I have a serious passion for UI effects, animations and creating intuitive, dynamic user experiences. Let's make something special!
+					specializing in React, JavaScript, React Native and PostgreSQL. I enjoy building modern web applications with clean user interfaces and scalable backend solutions.
 				</p>
 			</div>
 		
@@ -178,6 +183,18 @@ $(window).bind('load scroll',function() {
 			<div class="box">
 				<i class="fas fa-database icon1" aria-hidden="true"></i>
 				<br>MySQL
+			</div>
+		</li>
+		<li class="horizontalList" id="skillSpace">
+			<div class="box">
+				<i class="fa-brands fa-node-js icon1" aria-hidden="true"></i>
+				<br>Node.js
+			</div>
+		</li>
+		<li class="horizontalList" id="skillSpace">
+			<div class="box">
+				<i class="fa-brands fa-postgresql icon1" aria-hidden="true"></i>
+				<br>PostgreSQL
 			</div>
 		</li>
 		</div>
@@ -398,20 +415,56 @@ $(window).bind('load scroll',function() {
 			</div>
 		</div>
 	</div>
+	<div class="centerDIV">
+		<div class="divFloat" id="skillCard">
+			
+			<div class="skillBox" style="display: flex; justify-content: center;">
+					<i class="fas fa-database icon1" aria-hidden="true"></i>			
+			</div>
+			<div style="margin: 25px 30px 15px; text-align: center;">
+				<h6 class="skillBoxHeader">Node.js</h6>
+				<h6 class="skillBoxLabel">Concepts</h6>
+				<p >REST APIs, Express Integration, Middleware, CRUD Operations</p>
+				<h6 class="skillBoxLabel">Experience Level</h6>
+				<p>Beginner-Intermediate</p>
+				<h6 class="skillBoxLabel">Years of Experience</h6>
+				<p>1</p>
+			</div>
+		</div>
+	</div>
+	<div class="centerDIV">
+		<div class="divFloat" id="skillCard">
+			
+			<div class="skillBox" style="display: flex; justify-content: center;">
+					<i class="fas fa-database icon1" aria-hidden="true"></i>			
+			</div>
+			<div style="margin: 25px 30px 15px; text-align: center;">
+				<h6 class="skillBoxHeader">PostgreSQL</h6>
+				<h6 class="skillBoxLabel">Concepts</h6>
+				<p >Relational Database Design, SQL, Foreign Keys, CRUD Operations</p>
+				<h6 class="skillBoxLabel">Experience Level</h6>
+				<p>Beginner</p>
+				<h6 class="skillBoxLabel">Years of Experience</h6>
+				<p>1</p>
+			</div>
+		</div>
+	</div>
 	</div>
 
 	<div>
 				<div class="projectDetailsDIV">
 			<div class="divFloat projectBox">
 				<div class="projectHeader">
-					<i class="fa-solid fa-diagram-project iconProject"></i>
-					<h6 class="fontHeader" > | Staffing App | </h6>
+					<h6 class="fontHeader">| Staffing Management System | </h6>
 					<i class="fa-solid fa-diagram-project iconProject" style="transform: scaleX(-1);"></i>
-
+ 
 				</div>
 				<div style="margin: 50px 60px;">
 				<ul style="padding: 0px 0px 20px 0px;">
 					<li class="horizontalList">
+					<h6 class="skillBoxLabel">Summary</h6>
+					<div class="opacityLabel" style="width: 400px;flex-wrap:wrap">A full-stack staffing management platform built to streamline employee scheduling, event planning, and workforce management for staffing agencies.</div>
+					<br><br>
 					<div class="navProjects" id="project4">
 						<div class="navigationBar">
 						<div class="nBL" id="nBL">
@@ -431,16 +484,31 @@ $(window).bind('load scroll',function() {
 					<li class="horizontalList" style=" vertical-align: top;">
 					<div style="margin-top: 0px; margin-left: 45px; margin-right:35px">
 						<h6 class="skillBoxLabel">Company</h6>
-						<p>ES/Cipriani</p>
+						<p class="opacityLabel">ES/Cipriani</p>
 						<h6 class="skillBoxLabel">Front End</h6>
-						<p >#React #JavaScript<br>#CSS #FetchAPI</p>
+						<p ><div class="tagDiv">React</div>
+							<div class="tagDiv">JavaScript</div>
+							<div class="tagDiv">CSS</div>
+							<div class="tagDiv">FetchAPI</div></p>
 						<h6 class="skillBoxLabel">Back End</h6>
-						<p >#Node.js #Express.js<br></p>
-						<h6 class="skillBoxLabel">Database</h6>
-						<p >#PostgreSQL #Postman</p>
+						<p >
+							<div class="tagDiv">Node.js</div>
+							<div class="tagDiv">Express.js</div>
+							<div class="tagDiv">PostgreSQL</div>
+							<div class="tagDiv">Postman</div>
+						</p>
+						<br>
+						<div class="highlightDiv">
+							<h6 class="skillBoxLabel" style="color: white;">Highlights</h6>
+							<p style="color: white; opacity: 0.8;">‣ Full Stack
+								<br>‣ 20+ React Components
+								<br>‣ 10+ Database Tables
+								<br>‣ Calendar/Employee Scheduling
+							</p>
+						</div>
 						<br>
 						<br>
-						<a href="https://cdl9.github.io/exquisiteApp/" target="_blank">See Project</a>
+						<a href="https://cdl9.github.io/exquisiteApp/" target="_blank">See Live Demo</a>
 						<br><br>
 						<a href="#" class="fa fa-github" id="smIcon" style="color:#6371dd" onclick="window.open('https://github.com/cdl9/exquisiteApp','_blank')"></a>
 					</div>
@@ -453,7 +521,6 @@ $(window).bind('load scroll',function() {
 			<!-- The element which will float at the center of the screen -->
 			<div class="divFloat projectBox">
 				<div class="projectHeader">
-					<i class="fa-solid fa-diagram-project iconProject"></i>
 					<h6 class="fontHeader" > | FieldWorker App | </h6>
 					<i class="fa-solid fa-diagram-project iconProject" style="transform: scaleX(-1);"></i>
 
@@ -461,6 +528,11 @@ $(window).bind('load scroll',function() {
 				<div style="margin: 50px 60px;">
 				<ul style="padding: 0px 0px 20px 0px;">
 					<li class="horizontalList">
+					<h6 class="skillBoxLabel">Summary</h6>
+					<div class="opacityLabel" style="width: 400px;flex-wrap:wrap;">
+						A cross-platform mobile application developed during my internship to help field workers manage daily tasks, report progress, and improve communication between employees and supervisors.
+					</div>
+					<br><br>
 					<div class="navProjects" id="project1">
 						<div class="navigationBar">
 						<div class="nBL" id="nBL">
@@ -481,13 +553,30 @@ $(window).bind('load scroll',function() {
 					<li class="horizontalList" style=" vertical-align: top;">
 					<div style="margin-top: 0px; margin-left: 45px; margin-right:35px">
 						<h6 class="skillBoxLabel">Company</h6>
-						<p>AnalytIQ</p>
+						<p class="opacityLabel">AnalytIQ</p>
 						<h6 class="skillBoxLabel">Front End</h6>
-						<p >#reactNative #javascript #ajax <br>#html #css</p>
-						<h6 class="skillBoxLabel">Back End</h6>
-						<p >#mySQL</p>
-						<h6 class="skillBoxLabel">Other Technologies</h6>
-						<p >#git #figma</p>
+						<p >
+							<div class="tagDiv">React Native</div>
+							<div class="tagDiv">JavaScript</div>
+							<div class="tagDiv">AJAX</div>
+							<div class="tagDiv">HTML</div>
+							<div class="tagDiv">CSS</div>
+						</p>
+						<h6 class="skillBoxLabel">Back End/Others</h6>
+						<p ><div class="tagDiv">mySQL</div>
+							<div class="tagDiv">Git</div>
+							<div class="tagDiv">Figma</div>
+						</p>
+						<br>
+						<div class="highlightDiv">
+							<h6 class="skillBoxLabel" style="color: white;">Highlights</h6>
+							<p style="color: white; opacity: 0.8;">
+								‣ Internship Project
+								<br>‣ Cross Platform Mobile App
+								<br>‣ REST API Integration
+								<br>‣ Mobile UI/UX Design
+							</p>
+						</div>
 						<br><br>
 						<a href="https://apps.apple.com/us/app/fieldworker/id1529488939" target="_blank">See on Appstore</a>
 						<br><br>
@@ -501,7 +590,6 @@ $(window).bind('load scroll',function() {
 		<div class="projectDetailsDIV">
 			<div class="divFloat projectBox">
 				<div class="projectHeader">
-					<i class="fa-solid fa-diagram-project iconProject"></i>
 					<h6 class="fontHeader" > | Anyone Can Cook | </h6>
 					<i class="fa-solid fa-diagram-project iconProject" style="transform: scaleX(-1);"></i>
 
@@ -509,6 +597,11 @@ $(window).bind('load scroll',function() {
 				<div style="margin: 50px 60px;">
 				<ul style="padding: 0px 0px 20px 0px;">
 					<li class="horizontalList">
+					<h6 class="skillBoxLabel">Summary</h6>
+					<div class="opacityLabel" style="width: 400px;flex-wrap:wrap;">
+						A recipe discovery application that allows users to search meals, explore recipes, and view detailed cooking instructions using data from TheMealDB API.
+					</div>
+					<br><br>
 					<div class="navProjects" id="project2">
 						<div class="navigationBar">
 						<div class="nBL" id="nBL">
@@ -530,11 +623,26 @@ $(window).bind('load scroll',function() {
 						<h6 class="skillBoxLabel">Project</h6>
 						<p>Recipe App</p>
 						<h6 class="skillBoxLabel">Front End</h6>
-						<p >#html #css<br>#javascript</p>
-						<h6 class="skillBoxLabel">Back End</h6>
-						<p >#mySQL</p>
-						<h6 class="skillBoxLabel">Other Technologies</h6>
-						<p >#figma #procreate #github #visualstudio</p>
+						<p ><div class="tagDiv">HTML</div> 
+							<div class="tagDiv">CSS</div>
+							<div class="tagDiv">JavaScript</div>
+						</p>
+						<h6 class="skillBoxLabel">Back End/Others</h6>
+						<p ><div class="tagDiv">LocalStorage</div>
+							<div class="tagDiv">figma</div> 
+							<div class="tagDiv">Procreate</div> 
+							<div class="tagDiv">Github</div>
+							<div class="tagDiv">VisualStudio</div>
+						</p>
+						<br>
+						<div class="highlightDiv">
+							<h6 class="skillBoxLabel" style="color: white;">Highlights</h6>
+							<p style="color: white; opacity: 0.8;">
+								‣ Local Storage(Favorites Meals Feature)
+								<br>‣ Search and Filter Functionality
+								<br>‣ REST API Integration(Recipe Details)
+							</p>
+						</div>
 						<br>
 						<br>
 						<a href="https://cdl9.github.io/RecipeApp/" target="_blank">See Project</a>
@@ -549,14 +657,18 @@ $(window).bind('load scroll',function() {
 		<div class="projectDetailsDIV">
 			<div class="divFloat projectBox">
 				<div class="projectHeader">
-					<i class="fa-solid fa-diagram-project iconProject"></i>
-					<h6 class="fontHeader" > | Weather App| </h6>
+					<h6 class="fontHeader" > | Weather App | </h6>
 					<i class="fa-solid fa-diagram-project iconProject" style="transform: scaleX(-1);"></i>
 
 				</div>
 				<div style="margin: 50px 60px;">
 				<ul style="padding: 0px 0px 20px 0px;">
 					<li class="horizontalList">
+					<h6 class="skillBoxLabel">Summary</h6>
+					<div class="opacityLabel" style="width: 400px;flex-wrap:wrap">
+						An interactive weather dashboard featuring live forecasts, weather maps, saved locations, and data visualizations using the OpenWeather API
+					</div>
+					<br><br>
 					<div class="navProjects" id="project3">
 						<div class="navigationBar">
 						<div class="nBL" id="nBL">
@@ -578,11 +690,27 @@ $(window).bind('load scroll',function() {
 						<h6 class="skillBoxLabel">Project</h6>
 						<p>Weather App</p>
 						<h6 class="skillBoxLabel">Front End</h6>
-						<p >#React #css</p>
-						<h6 class="skillBoxLabel">Back End</h6>
-						<p >#SQL</p>
-						<h6 class="skillBoxLabel">Other Technologies</h6>
-						<p >#procreate #github #VScode</p>
+						<p >
+							<div class="tagDiv">React</div>
+							<div class="tagDiv">HTML</div> 
+							<div class="tagDiv">CSS</div>
+						</p>
+						<h6 class="skillBoxLabel">Back End/Others</h6>
+						<p ><div class="tagDiv">LocalStorage</div>
+						<div class="tagDiv">Procreate</div>
+							<div class="tagDiv">GitHub</div>
+							<div class="tagDiv">VSCode</div>
+						</p>
+						<br>
+						<div class="highlightDiv">
+							<h6 class="skillBoxLabel" style="color: white;">Highlights</h6>
+							<p style="color: white; opacity: 0.8;">
+								‣ Local Storage(Saved Cities Feature)
+								<br>‣ Dark Mode/Light Mode Toggle
+								<br>‣ OpenWeather API Integration
+								<br>‣ React Leaflet Maps, Recharts Graphs
+							</p>
+						</div>
 						<br>
 						<br>
 						<a href="https://cdl9.github.io/my-vite-app/" target="_blank">See Project</a>
