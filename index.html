@@ -68,9 +68,9 @@ $(window).bind('load scroll',function() {
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
 
 </head>
 
@@ -86,11 +86,19 @@ $(window).bind('load scroll',function() {
 	</a>
 	<div id="floatingBox">
 		<ul>	
-		<li class="horizontalList"><a class="link" href="#home"> HOME </a></li>
-		<li class="horizontalList"><a class="link" href="#about"> ABOUT </a></li>
-		<li class="horizontalList"><a class="link" href="#projects"> PROJECTS </a></li>	
-		<li class="horizontalList"><a class="link" href="#contact"> CONTACT </a></li>
+		<li class="horizontalList"><a class="link" href="#home"> ~/home</a></li>
+		<li class="horizontalList"><a class="link" href="#about"> ~/about </a></li>
+		<li class="horizontalList"><a class="link" href="#projects"> ~/projects </a></li>	
+		<li class="horizontalList"><a class="link" href="#contact"> ~/contact </a></li>
 		</ul>
+	</div>
+	<div class="toggle-wrapper">
+		<label class="toggle-label">
+			<i class="fa-regular fa-sun"></i>
+		<input type="checkbox" id="theme-toggle" />
+		<span class="slider"></span>
+			<i class="fa-regular fa-moon"></i>
+		</label>
 	</div>
 </div>
 
@@ -108,7 +116,10 @@ $(window).bind('load scroll',function() {
 				<canvas id="canvas">
 				</canvas>
 				<p class="bigTitle">Welcome to my page!</p>
-				<p class="subTitle">Personal Portfolio Website</p>
+				<p class="text"> I'm a
+				<span class="text highlightText">Software Developer</span>
+					specializing in React, JavaScript, React Native and PostgreSQL. I enjoy building modern web applications with clean user interfaces and scalable backend solutions.
+				</p>
 				<div class="rowDivs">
 					<div><button class="submitButton" id="downloadButton" onclick="window.open('Christian_Leon_Junior_Developer_EB.pdf','_blank')">DOWNLOAD CV</button></div>
 					<div><a class="submitButton" id="projectButton" href="#projects" >PROJECTS</a></div>
@@ -124,81 +135,160 @@ $(window).bind('load scroll',function() {
 	<li>
 	<div class="sections" id="about">
 			<div id="headerAbout">
-				<p class="name " id="subtitle4"><span class="name highlightText">02.</span> About me</p>
-				<p class="text"> I'm a
-				<span class="text highlightText">Software Developer</span>
-					specializing in React, JavaScript, React Native and PostgreSQL. I enjoy building modern web applications with clean user interfaces and scalable backend solutions.
-				</p>
+				<p class="name " id="subtitle4"><span class="name highlightText">02.</span> Skills</p>
 			</div>
 		
 		<ul id="skillsList">
+		<div class="skillContainer">
+		<h4 class="techLabel">Front End</h4>
 		<div id="skillsGroup">
 		<li class="horizontalList" id="skillSpace">
-		<div class="box">
-			<i class="fab fa-html5 icon1" aria-hidden="true"></i>			
-			<br>HTML
-		</div>
+			<div class="box">
+			<div class="boxContent">
+				<i class="fab fa-html5 icon1" aria-hidden="true"></i>			
+				<br>HTML
+			</div>
+			</div>
 		</li>
 	
 		<li class="horizontalList" id="skillSpace">
-		<div class="box">
-			<i class="fab fa-css3-alt icon1" aria-hidden="true"></i>
-			<br>CSS
-		</div>
+			<div class="box">
+			<div class="boxContent">
+				<i class="fab fa-css3-alt icon1" aria-hidden="true"></i>
+				<br>CSS
+			</div>
+			</div>
 		</li>
 
 		<li class="horizontalList" id="skillSpace">
-		<div class="box">
+			<div class="box">
+			<div class="boxContent">
 				<i class="fab fa-js icon1" aria-hidden="true"></i>
 				<br>JavaScript
-		</div>
+			</div>
+			</div>
 		</li>
 	
 		<li class="horizontalList" id="skillSpace">
-		<div class="box">
+			<div class="box">
+			<div class="boxContent">
 			<i class="fab fa-react icon1" aria-hidden="true" id="btClick"></i>
 			<br>React
-		</div>
+			</div>
+			</div>
 		</li>
+		</div>
+		</div>
+		
+		<div class="skillContainer">
+		<h4 class="techLabel">Languages</h4>
+		<div id="skillsGroup">
 		
 		<li class="horizontalList" id="skillSpace">
 		<div class="box">
-					<i class="fas fa-file-code icon1" aria-hidden="true"></i>
-					<br>C++
+			<div class="boxContent">
+
+				<i class="fas fa-file-code icon1" aria-hidden="true"></i>
+				<br>C++
+			</div>
 		</div>
 		</li>
 		<li class="horizontalList" id="skillSpace">
 			<div class="box">
+			<div class="boxContent">
 				<i class="fab fa-java icon1" aria-hidden="true"></i>
 				<br>Java
 			</div>
+			</div>
 		</li>
 		<li class="horizontalList" id="skillSpace">
 			<div class="box">
+			<div class="boxContent">
+				
 				<i class="fab fa-python icon1" aria-hidden="true"></i>
 				<br>Python
 			</div>
-		</li>
-		<li class="horizontalList" id="skillSpace">
-			<div class="box">
-				<i class="fas fa-database icon1" aria-hidden="true"></i>
-				<br>MySQL
-			</div>
-		</li>
-		<li class="horizontalList" id="skillSpace">
-			<div class="box">
-				<i class="fa-brands fa-node-js icon1" aria-hidden="true"></i>
-				<br>Node.js
-			</div>
-		</li>
-		<li class="horizontalList" id="skillSpace">
-			<div class="box">
-				<i class="fa-brands fa-postgresql icon1" aria-hidden="true"></i>
-				<br>PostgreSQL
 			</div>
 		</li>
 		</div>
+		</div>
 		
+		<div class="skillContainer">
+		<h4 class="techLabel">Backend/Databases</h4>
+		<div id="skillsGroup">
+		<li class="horizontalList" id="skillSpace">
+			<div class="box">
+				<div class="boxContent">
+				<i class="fa-brands fa-node-js icon1" aria-hidden="true"></i>
+				<br>Node.js
+			</div>
+			</div>
+		</li>
+		<li class="horizontalList" id="skillSpace">
+			<div class="box">
+			<div class="boxContent">
+				<i class="fa-brands fa-postgresql icon1" aria-hidden="true"></i>
+				<br>PostgreSQL
+			</div>
+			</div>
+		</li>
+		<li class="horizontalList" id="skillSpace">
+			<div class="box">
+				<div class="boxContent">
+				<i class="fas fa-database icon1" aria-hidden="true"></i>
+				<br>MySQL
+			</div>
+			</div>
+		</li>
+		</div>
+		</div>
+
+		<div class="skillContainer">
+		<h4 class="techLabel">Tools </h4>
+		<div id="skillsGroup">
+		<li class="horizontalList" id="skillSpace">
+			<div class="box">
+			<div class="boxContent">
+				<i class="fa-brands fa-git icon1" aria-hidden="true"></i>
+				<br>Git
+			</div>
+			</div>
+		</li>
+		<li class="horizontalList" id="skillSpace">
+			<div class="box">
+			<div class="boxContent">
+				<i class="fa-brands fa-github icon1" aria-hidden="true"></i>
+				<br>GitHub
+			</div>
+			</div>
+		</li>
+		<li class="horizontalList" id="skillSpace">
+			<div class="box">
+				<div class="boxContent">
+				<i class="fa-brands fa-figma icon1" aria-hidden="true"></i>
+				<br>Figma
+			</div>
+			</div>
+		</li>
+		<li class="horizontalList" id="skillSpace">
+			<div class="box">
+				<div class="boxContent">
+				<i class="fa-brands fa-microsoft icon1" aria-hidden="true"></i>
+				<br>Microsoft
+				</div>
+			</div>
+		</li>
+		<li class="horizontalList" id="skillSpace">
+			<div class="box">
+				<div class="boxContent">
+				<i class="fa-brands fa-linux icon1" aria-hidden="true"></i>
+				<br>Linux
+			</div>
+			</div>
+		</li>
+		</div>
+		</div>
+
 		</ul>
 	</div></li>
 	
@@ -252,8 +342,7 @@ $(window).bind('load scroll',function() {
 	<div class="sections" id="contact">
 		<div id="contactForm">
 		<p class="name" id="subtitle1">Get In Touch!</p>
-		<p id="textContact">I'm interested in freelance opportunities — small, medium, or even large projects would be great!
-			If you have any requests or questions, don't hesitate to use the form. Hope to hear from you soon!
+		<p id="textContact">I'm currently seeking Software Engineer and Full Stack Developer opportunities. If you'd like to discuss a position, collaborate on a project, or simply connect, I'd love to hear from you.
 		</p>
 		<input placeholder="Name*" class="inputFields inlineInputFields"></input>
 		<input placeholder="Email*" class="inputFields inlineInputFields"></input>
@@ -368,7 +457,7 @@ $(window).bind('load scroll',function() {
 	<div class="centerDIV">
 		<div class="divFloat" id="skillCard">
 			<div class="skillBox" style="display: flex; justify-content: center;">
-					<i class="fab fa-js icon1" aria-hidden="true"></i>			
+					<i class="fab fa-java icon1" aria-hidden="true"></i>			
 			</div>
 			<div style="margin: 25px 30px 15px; text-align: center;">
 				<h6 class="skillBoxHeader">Java</h6>
@@ -398,28 +487,12 @@ $(window).bind('load scroll',function() {
 			</div>
 		</div>
 	</div>
+	
 	<div class="centerDIV">
 		<div class="divFloat" id="skillCard">
 			
 			<div class="skillBox" style="display: flex; justify-content: center;">
-					<i class="fas fa-database icon1" aria-hidden="true"></i>			
-			</div>
-			<div style="margin: 25px 30px 15px; text-align: center;">
-				<h6 class="skillBoxHeader">MySQL</h6>
-				<h6 class="skillBoxLabel">Concepts</h6>
-				<p >SQL Queries, Relational Databases, Joins, CRUD Operations</p>
-				<h6 class="skillBoxLabel">Experience Level</h6>
-				<p>Intermediate</p>
-				<h6 class="skillBoxLabel">Years of Experience</h6>
-				<p>3</p>
-			</div>
-		</div>
-	</div>
-	<div class="centerDIV">
-		<div class="divFloat" id="skillCard">
-			
-			<div class="skillBox" style="display: flex; justify-content: center;">
-					<i class="fas fa-database icon1" aria-hidden="true"></i>			
+					<i class="fa-brands fa-node-js icon1" aria-hidden="true"></i>			
 			</div>
 			<div style="margin: 25px 30px 15px; text-align: center;">
 				<h6 class="skillBoxHeader">Node.js</h6>
@@ -436,7 +509,7 @@ $(window).bind('load scroll',function() {
 		<div class="divFloat" id="skillCard">
 			
 			<div class="skillBox" style="display: flex; justify-content: center;">
-					<i class="fas fa-database icon1" aria-hidden="true"></i>			
+					<i class="fa-brands fa-postgresql icon1" aria-hidden="true"></i>			
 			</div>
 			<div style="margin: 25px 30px 15px; text-align: center;">
 				<h6 class="skillBoxHeader">PostgreSQL</h6>
@@ -446,6 +519,23 @@ $(window).bind('load scroll',function() {
 				<p>Beginner</p>
 				<h6 class="skillBoxLabel">Years of Experience</h6>
 				<p>1</p>
+			</div>
+		</div>
+	</div>
+	<div class="centerDIV">
+		<div class="divFloat" id="skillCard">
+			
+			<div class="skillBox" style="display: flex; justify-content: center;">
+					<i class="fas fa-database icon1" aria-hidden="true"></i>			
+			</div>
+			<div style="margin: 25px 30px 15px; text-align: center;">
+				<h6 class="skillBoxHeader">MySQL</h6>
+				<h6 class="skillBoxLabel">Concepts</h6>
+				<p >SQL Queries, Relational Databases, Joins, CRUD Operations</p>
+				<h6 class="skillBoxLabel">Experience Level</h6>
+				<p>Intermediate</p>
+				<h6 class="skillBoxLabel">Years of Experience</h6>
+				<p>3</p>
 			</div>
 		</div>
 	</div>
