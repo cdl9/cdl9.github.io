@@ -115,10 +115,10 @@ $(window).bind('load scroll',function() {
 			<div class="sections" id="home" >
 				<canvas id="canvas">
 				</canvas>
-				<p class="bigTitle">Welcome to my page!</p>
+				<p class="bigTitle"><span class="titleLO">> </span>hi, I'm <span class="titleHL">Chris </span><span class="blinking-cursor"></span></p>
 				<p class="text"> I'm a
-				<span class="text highlightText">Software Developer</span>
-					specializing in React, JavaScript, React Native and PostgreSQL. I enjoy building modern web applications with clean user interfaces and scalable backend solutions.
+				<span class="text highlightText2">Software Developer</span>
+					specializing in React, JavaScript, React Native and PostgreSQL. I build modern web applications with <span class="text highlightText2">clean UI</span> and scalable <span class="text highlightText2">backend</span> solutions.
 				</p>
 				<div class="rowDivs">
 					<div><button class="submitButton" id="downloadButton" onclick="window.open('Christian_Leon_Junior_Developer_EB.pdf','_blank')">DOWNLOAD CV</button></div>
@@ -135,7 +135,7 @@ $(window).bind('load scroll',function() {
 	<li>
 	<div class="sections" id="about">
 			<div id="headerAbout">
-				<p class="name " id="subtitle4"><span class="name highlightText">02.</span> Skills</p>
+				<p class="name " id="subtitle4"><span class="name highlightText2">02.</span> Skills</p>
 			</div>
 		
 		<ul id="skillsList">
@@ -295,52 +295,118 @@ $(window).bind('load scroll',function() {
 	
 	<li>
 	<div class="sections" id="projects">
-		<p class="name" id="subtitle1"><span class="name highlightText">03.</span> Projects</p>
+		<p class="name" id="subtitle1"><span class="name highlightText2">03. </span>Selected Projects</p>
 		<ul id="projectsList">
-			<li class="horizontalList"><div class="projects project1">
-				<p class="tags"><span style="font-size:20px">Staffing App</span><br><span class="highlightText">React, Node.js, PostgreSQL </span><br>
-				<button class="submitButton learnButton" id="learnButton">Learn More</button></p></div>
+			<li class="horizontalList">
+				<div class="projectCard learnButton">
+				<div class="projects project1">
+					<div class="fav-btn2">
+						<span>Featured</span>
+        				<i class="fa-solid fa-star"></i>
+      				</div>
+				</div>
+				<div class="tags">
+					<div class="rowInfo">
+						<span class="highlightText">Management System</span>
+						<span class="opacityLabel">2026</span>
+					</div>
+					<div class="project-description">
+						<span class="project-title">Staffing App</span><br>
+						<span class="opacityLabel" style="flex-wrap:wrap">A full-stack staffing management platform built to streamline employee scheduling.</span>
+					</div>	
+
+					<span class="tagDiv">React </span>
+					<span class="tagDiv">Node.js</span>
+					<span class="tagDiv">PostgreSQL</span>
+				</div>
+				</div>
 			</li>
-			<li class="horizontalList"><div class="projects project2">
-				<p class="tags"><span style="font-size:20px">FieldWorker App</span><br><span class="highlightText">React Native </span>
-				<button class="submitButton learnButton" id="learnButton">Learn More</button></p></div>
+			<li class="horizontalList">
+				<div class="projectCard learnButton">
+				
+				<div class="projects project2">
+				</div>
+				<div class="tags">
+					<div class="rowInfo">
+						<span class="highlightText">Mobile Application</span>
+						<span class="opacityLabel">2026</span>
+					</div>
+					
+					<div class="project-description">
+						<span class="project-title">FieldWorker App</span><br>
+						<span class="opacityLabel" style="flex-wrap:wrap">A mobile application that helps field workers manage daily tasks and report progress.</span>
+					</div>
+
+					<span class="tagDiv">React </span>
+					<span class="tagDiv">Node.js</span>
+					<span class="tagDiv">PostgreSQL</span>
+
+				</div>
+			
+				</div>
 			</li>
-			<li class="horizontalList"><div class="projects project3">
-				<p class="tags"><span style="font-size:20px">Recipe App</span><br><span class="highlightText">JavaScript</span><br>
-				<button class="submitButton learnButton" id="learnButton">Learn More</button></p></div>
+			<li class="horizontalList">
+				<div class="projectCard learnButton">				
+					<div class="projects project3">
+					</div>
+					<div class="tags">
+						<div class="rowInfo">
+							<span class="highlightText">Web Application</span>
+							<span class="opacityLabel">2025</span>
+						</div>
+						<div class="project-description">
+							<span class="project-title">Recipe App</span><br>
+							<span class="opacityLabel" style="flex-wrap:wrap">A web application that allows users to search for and view recipes.</span>
+						</div>
+
+						<span class="tagDiv">JavaScript </span>
+						<span class="tagDiv">HTML</span>
+						<span class="tagDiv">CSS</span>
+
+					</div>
+				</div>
 			</li>
-			<li class="horizontalList"><div class="projects project4">
-				<p class="tags"><span style="font-size:20px">Weather App</span><br><span class="highlightText">React Framework </span>
-				<button class="submitButton learnButton" id="learnButton">Learn More</button></p></div>
+			<li class="horizontalList">
+				<div class="projectCard learnButton">
+					<div class="projects project4">
+					</div>
+					<div class="tags">
+						<div class="rowInfo">
+							<span class="highlightText">Web Application</span>
+							<span class="opacityLabel">2025</span>
+						</div>
+						<div class="project-description">
+							<span class="project-title">Weather App</span><br>
+							<span class="opacityLabel" style="flex-wrap:wrap">A weather application that provides current weather conditions and forecasts.</span>
+						</div>
+
+						<span class="tagDiv">React</span>
+						<span class="tagDiv">HTML/CSS</span>
+						<span class="tagDiv">GitHub</span>
+						
+					</div>
+				</div>
 			</li>
 		</ul>
 	</div>
 	</li>
-	<li>
-		<div class="sections" id="illustrations">
-			<p class="name" id="subtitle1">Wireframes</p>
-			<ul id="projectsList">
-				<li class="horizontalList"><div class="projects" id="illustration1">
-				<p class="tags">
-				<button class="submitButton learnButton" id="learnButton">See More</button></p></div>
-				</li>
-				<li class="horizontalList"><div class="projects" id="illustration3">
-					<p class="tags">
-					<button class="submitButton  learnButton" id="learnButton">See More</button></p></div>
-				</li>
-				<li class="horizontalList"><div class="projects" id="illustration2">
-					<p class="tags">
-					<button class="submitButton  learnButton" id="learnButton">See More</button></p></div>
-				</li>
-				
-			
-			</ul>
-		</div>
-	</li>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+	
 	
 	<li>
 	<div class="sections" id="contact">
 		<div id="contactForm">
+		<br>
+		<br>
+		<br>
+		<br>
 		<p class="name" id="subtitle1">Get In Touch!</p>
 		<p id="textContact">I'm currently seeking Software Engineer and Full Stack Developer opportunities. If you'd like to discuss a position, collaborate on a project, or simply connect, I'd love to hear from you.
 		</p>
@@ -350,6 +416,19 @@ $(window).bind('load scroll',function() {
 		<textarea placeholder="Message"class="inputFields message"></textarea>
 	
 		<button class="submitButton" id="emailButton"> SUBMIT</button>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		
 		</div>
 		<div id="container">
 			<div id="ball-2" class="circle"></div>
