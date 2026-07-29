@@ -33,6 +33,9 @@ document.querySelectorAll("#projectsList .projectCard").forEach((card, index) =>
 document.querySelectorAll(".homeElement").forEach((card, index) => {
     card.style.transitionDelay = `${index * 200}ms`;
 });
+document.querySelectorAll(".contact-element").forEach((card, index) => {
+    card.style.transitionDelay = `${index * 200}ms`;
+});
 var aboutIcon = document.getElementsByClassName("box");
 /*
 for(let i=0;i<aboutIcon.length;i++){

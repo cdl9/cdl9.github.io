@@ -256,8 +256,8 @@ $(window).bind('load scroll',function() {
 			<p class="name " id="subtitle4"><span class="name highlightText2">03. </span>Selected Projects</p>
 		</div>
 
-		<ul id="projectsList">
-			<li class="horizontalList">
+		<div id="projectsList">
+			<div class="horizontalList">
 				<div class="projectCard learnButton reveal">
 				<div class="projects project1">
 					<div class="fav-btn2">
@@ -280,8 +280,8 @@ $(window).bind('load scroll',function() {
 					<span class="tagDiv">PostgreSQL</span>
 				</div>
 				</div>
-			</li>
-			<li class="horizontalList">
+			</div>
+			<div class="horizontalList">
 				<div class="projectCard learnButton reveal">
 				
 				<div class="projects project2">
@@ -304,8 +304,8 @@ $(window).bind('load scroll',function() {
 				</div>
 			
 				</div>
-			</li>
-			<li class="horizontalList">
+			</div>
+			<div class="horizontalList">
 				<div class="projectCard learnButton reveal">				
 					<div class="projects project3">
 					</div>
@@ -325,8 +325,8 @@ $(window).bind('load scroll',function() {
 
 					</div>
 				</div>
-			</li>
-			<li class="horizontalList">
+			</div>
+			<div class="horizontalList">
 				<div class="projectCard learnButton reveal">
 					<div class="projects project4">
 					</div>
@@ -346,40 +346,64 @@ $(window).bind('load scroll',function() {
 						
 					</div>
 				</div>
-			</li>
-		</ul>
+			</div>
+		</div>
 	</div>
 		
 	
 	
-	<div class="sections" id="contact">
+	<div class="sections reveal" id="contact">
 		<div id="headerAbout">
 			<span class="name highlightText2">Get in Touch</span>
 			<p class="name " id="subtitle4"><span class="name highlightText2">04. </span>Let's work together!</p>
 		</div>
-		<div id="contactForm">
-		
-		<p id="textContact">I'm currently seeking Software Engineer and Full Stack Developer opportunities. If you'd like to discuss a position, collaborate on a project, or simply connect, I'd love to hear from you.
-		</p>
-		<input placeholder="Name*" class="inputFields inlineInputFields"></input>
-		<input placeholder="Email*" class="inputFields inlineInputFields"></input>
-		<input placeholder="Subject" class="inputFields" style="margin-top:10px; margin-bottom: 10px;"></input>
-		<textarea placeholder="Message"class="inputFields message"></textarea>
-	
-		<button class="submitButton" id="emailButton"> SUBMIT</button>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		
+
+		<div class="row-flex" style="padding:2rem; gap:2rem;">
+			<div style="flex: 1;" class="column-flex flex-start reveal contact-element">
+				<p class="textContact">I'm currently seeking Software Engineer and Full Stack Developer opportunities. If you'd like to discuss a position, collaborate on a project, or simply connect, I'd love to hear from you.
+				</p>
+				<div class="row-flex" style="gap:0.5rem;margin-bottom:1rem;">
+					<div class="round-container"><i class="fa-solid fa-envelope"aria-hidden="true"></i></div>
+					<div class="column-flex flex-start">
+						<div class="subLabel opacityLabel sFont">Email</div>
+						<div class="subLabel">christianleon0224@gmail.com</div>
+					</div>
+				</div>
+				<div class="row-flex" style="gap:0.5rem;margin-bottom:1rem;">
+					<div class="round-container"><i class="fa-solid fa-location-dot"aria-hidden="true"></i></div>
+					<div class="column-flex flex-start">
+						<div class="subLabel opacityLabel sFont">Location</div>
+						<div class="subLabel">NJ, USA</div>
+					</div>
+				</div>
+				<div class="row-flex" style="gap:0.5rem;margin-bottom:1rem;">
+					<div class="round-container"><i class="fa-solid fa-clock"aria-hidden="true"></i></div>
+					<div class="column-flex flex-start">
+						<div class="subLabel opacityLabel sFont">Response Time</div>
+						<div class="subLabel">Within 24 hours</div>
+					</div>
+				</div>
+			</div>
+			<div id="contactForm" style="flex: 1;" class="reveal contact-element">
+				<p><i class="fa-regular fa-user"aria-hidden="true"></i> Your Name</p>
+				<input placeholder="FirstName*" class="inputFields inlineInputFields" style="margin-bottom: 10px;"></input>
+				<input placeholder="Last Name*" class="inputFields inlineInputFields"></input>
+				<p><i class="fa-solid fa-at"aria-hidden="true"></i>Email</p>
+
+				<input placeholder="Email*" class="inputFields" style="margin-top:10px; margin-bottom: 10px;"></input>
+				
+				<input placeholder="Subject" class="inputFields" style="margin-top:10px; margin-bottom: 10px;"></input>
+				<p><i class="fa-regular fa-message"aria-hidden="true"></i>Message</p>
+
+				<textarea placeholder="Message"class="inputFields message"></textarea>
+			
+				<button class="submitButton" id="emailButton"> SUBMIT</button>
+				<br>
+				<br>
+				<br>
+				<br>
+				
+			</div>
 		</div>
 		<div id="container">
 			<div id="ball-2" class="circle"></div>
