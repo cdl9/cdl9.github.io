@@ -60,6 +60,8 @@ $(window).bind('load scroll',function() {
   });
 });
 
+
+
 </script>
 <script src="https://kit.fontawesome.com/fa6e198962.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="reset.css">
@@ -108,197 +110,155 @@ $(window).bind('load scroll',function() {
 	<button class="roundButton" onclick="window.open('https://www.instagram.com/leonchrissss/','_blank')"><a href="#" class="fa fa-instagram" id="smIcon"></a></button>
 </div>
 <div id="sectionsList">
-	<li>
-		<div>
-		
-			<div id="headerHome">
-			<div class="sections" id="home" >
-				<canvas id="canvas">
-				</canvas>
-				<p class="bigTitle"><span class="titleLO">> </span>hi, I'm <span class="titleHL">Chris </span><span class="blinking-cursor"></span></p>
-				<p class="text"> I'm a
-				<span class="text highlightText2">Software Developer</span>
-					specializing in React, JavaScript, React Native and PostgreSQL. I build modern web applications with <span class="text highlightText2">clean UI</span> and scalable <span class="text highlightText2">backend</span> solutions.
-				</p>
-				<div class="rowDivs">
-					<div><button class="submitButton" id="downloadButton" onclick="window.open('Christian_Leon_Junior_Developer_EB.pdf','_blank')">DOWNLOAD CV</button></div>
-					<div><a class="submitButton" id="projectButton" href="#projects" >PROJECTS</a></div>
-				</div>
+		<div class="sections reveal" id="home" >
+			<canvas id="canvas">
+			</canvas>
+			<p class="bigTitle homeElement reveal"><span class="titleLO">> </span>hi, I'm <span class="titleHL">Chris </span><span class="blinking-cursor"></span></p>
+			<p class="text homeElement reveal"> I'm a
+			<span class="text highlightText2">Software Developer</span>
+				specializing in React, JavaScript, React Native and PostgreSQL. I build modern web applications with <span class="text highlightText2">clean UI</span> and scalable <span class="text highlightText2">backend</span> solutions.
+			</p>
+			<div class="rowDivs">
+				<div><button class="submitButton homeElement reveal" id="downloadButton" onclick="window.open('Christian_Leon_Junior_Developer_EB.pdf','_blank')">DOWNLOAD CV</button></div>
+				<div><a class="submitButton homeElement reveal" id="projectButton" href="#projects" >PROJECTS</a></div>
 			</div>
-				
-			
 		</div>
-		</div>
-		
-	</li>
 	
-	<li>
-	<div class="sections" id="about">
+		<div class="sections reveal" id="about">
 			<div id="headerAbout">
-				<p class="name " id="subtitle4"><span class="name highlightText2">02.</span> Skills</p>
+				<span class="name highlightText2">Software Development</span>
+				<p class="name " id="subtitle4"><span class="name highlightText2">02. </span>Technical Skills</p>
 			</div>
-		
-		<ul id="skillsList">
-		<div class="skillContainer">
-		<h4 class="techLabel">Front End</h4>
-		<div id="skillsGroup">
-		<li class="horizontalList" id="skillSpace">
-			<div class="box">
-			<div class="boxContent">
-				<i class="fab fa-html5 icon1" aria-hidden="true"></i>			
-				<br>HTML
-			</div>
-			</div>
-		</li>
-	
-		<li class="horizontalList" id="skillSpace">
-			<div class="box">
-			<div class="boxContent">
-				<i class="fab fa-css3-alt icon1" aria-hidden="true"></i>
-				<br>CSS
-			</div>
-			</div>
-		</li>
-
-		<li class="horizontalList" id="skillSpace">
-			<div class="box">
-			<div class="boxContent">
-				<i class="fab fa-js icon1" aria-hidden="true"></i>
-				<br>JavaScript
-			</div>
-			</div>
-		</li>
-	
-		<li class="horizontalList" id="skillSpace">
-			<div class="box">
-			<div class="boxContent">
-			<i class="fab fa-react icon1" aria-hidden="true" id="btClick"></i>
-			<br>React
-			</div>
-			</div>
-		</li>
-		</div>
-		</div>
-		
-		<div class="skillContainer">
-		<h4 class="techLabel">Languages</h4>
-		<div id="skillsGroup">
-		
-		<li class="horizontalList" id="skillSpace">
-		<div class="box">
-			<div class="boxContent">
-
-				<i class="fas fa-file-code icon1" aria-hidden="true"></i>
-				<br>C++
-			</div>
-		</div>
-		</li>
-		<li class="horizontalList" id="skillSpace">
-			<div class="box">
-			<div class="boxContent">
-				<i class="fab fa-java icon1" aria-hidden="true"></i>
-				<br>Java
-			</div>
-			</div>
-		</li>
-		<li class="horizontalList" id="skillSpace">
-			<div class="box">
-			<div class="boxContent">
+			
+			<div id="skillsList">
+			<div class="skillContainer reveal">
+				<h4 class="techLabel"><i class="fa-solid fa-desktop" aria-hidden="true"></i> Front End</h4>
+				<div class="skillsGroup">
+						<div class="box horizontalList">
+						<div class="boxContent">
+							<i class="fab fa-html5 icon1" aria-hidden="true"></i>			
+							<br>HTML
+						</div>
+						</div>
 				
-				<i class="fab fa-python icon1" aria-hidden="true"></i>
-				<br>Python
-			</div>
-			</div>
-		</li>
-		</div>
-		</div>
-		
-		<div class="skillContainer">
-		<h4 class="techLabel">Backend/Databases</h4>
-		<div id="skillsGroup">
-		<li class="horizontalList" id="skillSpace">
-			<div class="box">
-				<div class="boxContent">
-				<i class="fa-brands fa-node-js icon1" aria-hidden="true"></i>
-				<br>Node.js
-			</div>
-			</div>
-		</li>
-		<li class="horizontalList" id="skillSpace">
-			<div class="box">
-			<div class="boxContent">
-				<i class="fa-brands fa-postgresql icon1" aria-hidden="true"></i>
-				<br>PostgreSQL
-			</div>
-			</div>
-		</li>
-		<li class="horizontalList" id="skillSpace">
-			<div class="box">
-				<div class="boxContent">
-				<i class="fas fa-database icon1" aria-hidden="true"></i>
-				<br>MySQL
-			</div>
-			</div>
-		</li>
-		</div>
-		</div>
+						<div class="box horizontalList">
+						<div class="boxContent">
+							<i class="fab fa-css3-alt icon1" aria-hidden="true"></i>
+							<br>CSS
+						</div>
+						</div>
 
-		<div class="skillContainer">
-		<h4 class="techLabel">Tools </h4>
-		<div id="skillsGroup">
-		<li class="horizontalList" id="skillSpace">
-			<div class="box">
-			<div class="boxContent">
-				<i class="fa-brands fa-git icon1" aria-hidden="true"></i>
-				<br>Git
-			</div>
-			</div>
-		</li>
-		<li class="horizontalList" id="skillSpace">
-			<div class="box">
-			<div class="boxContent">
-				<i class="fa-brands fa-github icon1" aria-hidden="true"></i>
-				<br>GitHub
-			</div>
-			</div>
-		</li>
-		<li class="horizontalList" id="skillSpace">
-			<div class="box">
-				<div class="boxContent">
-				<i class="fa-brands fa-figma icon1" aria-hidden="true"></i>
-				<br>Figma
-			</div>
-			</div>
-		</li>
-		<li class="horizontalList" id="skillSpace">
-			<div class="box">
-				<div class="boxContent">
-				<i class="fa-brands fa-microsoft icon1" aria-hidden="true"></i>
-				<br>Microsoft
+						<div class="box horizontalList">
+						<div class="boxContent">
+							<i class="fab fa-js icon1" aria-hidden="true"></i>
+							<br>JavaScript
+						</div>
+						</div>
+				
+						<div class="box horizontalList">
+						<div class="boxContent">
+						<i class="fab fa-react icon1" aria-hidden="true" id="btClick"></i>
+						<br>React
+						</div>
+						</div>
 				</div>
 			</div>
-		</li>
-		<li class="horizontalList" id="skillSpace">
-			<div class="box">
+			
+			
+			
+			<div class="skillContainer reveal">
+			<h4 class="techLabel"><i class="fa-solid fa-server" aria-hidden="true"></i>Backend/Databases</h4>
+			<div class="skillsGroup">
+				<div class="box horizontalList">
+					<div class="boxContent">
+					<i class="fa-brands fa-node-js icon1" aria-hidden="true"></i>
+					<br>Node.js
+				</div>
+				</div>
+				<div class="box horizontalList">
 				<div class="boxContent">
-				<i class="fa-brands fa-linux icon1" aria-hidden="true"></i>
-				<br>Linux
+					<i class="fa-brands fa-postgresql icon1" aria-hidden="true"></i>
+					<br>PostgreSQL
+				</div>
+				</div>
+				<div class="box horizontalList">
+					<div class="boxContent">
+					<i class="fas fa-database icon1" aria-hidden="true"></i>
+					<br>MySQL
+				</div>
+				</div>
+				<div class="box horizontalList">
+				<div class="boxContent">
+
+					<i class="fas fa-file-code icon1" aria-hidden="true"></i>
+					<br>C++
+				</div>
+				</div>
+				<div class="box horizontalList">
+				<div class="boxContent">
+					<i class="fab fa-java icon1" aria-hidden="true"></i>
+					<br>Java
+				</div>
+				</div>
+				<div class="box horizontalList">
+				<div class="boxContent">
+					
+					<i class="fab fa-python icon1" aria-hidden="true"></i>
+					<br>Python
+				</div>
+				</div>
 			</div>
 			</div>
-		</li>
+
+			<div class="skillContainer reveal">
+			<h4 class="techLabel"><i class="fa-solid fa-wrench" aria-hidden="true"></i> Tools </h4>
+			<div class="skillsGroup">
+				<div class="box horizontalList">
+				<div class="boxContent">
+					<i class="fa-brands fa-git icon1" aria-hidden="true"></i>
+					<br>Git
+				</div>
+				</div>
+				<div class="box horizontalList">
+				<div class="boxContent">
+					<i class="fa-brands fa-github icon1" aria-hidden="true"></i>
+					<br>GitHub
+				</div>
+				</div>
+				<div class="box horizontalList">
+					<div class="boxContent">
+					<i class="fa-brands fa-figma icon1" aria-hidden="true"></i>
+					<br>Figma
+				</div>
+				</div>
+				<div class="box horizontalList">
+					<div class="boxContent">
+					<i class="fa-brands fa-microsoft icon1" aria-hidden="true"></i>
+					<br>Microsoft
+					</div>
+				</div>
+				<div class="box horizontalList">
+					<div class="boxContent">
+					<i class="fa-brands fa-linux icon1" aria-hidden="true"></i>
+					<br>Linux
+				</div>
+				</div>
+			</div>
+			</div>
+
 		</div>
+		</div>
+	
+	
+	<div class="sections reveal" id="projects">
+		<div id="headerAbout">
+			<span class="name highlightText2">Featured Work</span>
+			<p class="name " id="subtitle4"><span class="name highlightText2">03. </span>Selected Projects</p>
 		</div>
 
-		</ul>
-	</div></li>
-	
-	
-	<li>
-	<div class="sections" id="projects">
-		<p class="name" id="subtitle1"><span class="name highlightText2">03. </span>Selected Projects</p>
 		<ul id="projectsList">
 			<li class="horizontalList">
-				<div class="projectCard learnButton">
+				<div class="projectCard learnButton reveal">
 				<div class="projects project1">
 					<div class="fav-btn2">
 						<span>Featured</span>
@@ -322,7 +282,7 @@ $(window).bind('load scroll',function() {
 				</div>
 			</li>
 			<li class="horizontalList">
-				<div class="projectCard learnButton">
+				<div class="projectCard learnButton reveal">
 				
 				<div class="projects project2">
 				</div>
@@ -346,7 +306,7 @@ $(window).bind('load scroll',function() {
 				</div>
 			</li>
 			<li class="horizontalList">
-				<div class="projectCard learnButton">				
+				<div class="projectCard learnButton reveal">				
 					<div class="projects project3">
 					</div>
 					<div class="tags">
@@ -367,7 +327,7 @@ $(window).bind('load scroll',function() {
 				</div>
 			</li>
 			<li class="horizontalList">
-				<div class="projectCard learnButton">
+				<div class="projectCard learnButton reveal">
 					<div class="projects project4">
 					</div>
 					<div class="tags">
@@ -389,25 +349,16 @@ $(window).bind('load scroll',function() {
 			</li>
 		</ul>
 	</div>
-	</li>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
+		
 	
 	
-	<li>
 	<div class="sections" id="contact">
+		<div id="headerAbout">
+			<span class="name highlightText2">Get in Touch</span>
+			<p class="name " id="subtitle4"><span class="name highlightText2">04. </span>Let's work together!</p>
+		</div>
 		<div id="contactForm">
-		<br>
-		<br>
-		<br>
-		<br>
-		<p class="name" id="subtitle1">Get In Touch!</p>
+		
 		<p id="textContact">I'm currently seeking Software Engineer and Full Stack Developer opportunities. If you'd like to discuss a position, collaborate on a project, or simply connect, I'd love to hear from you.
 		</p>
 		<input placeholder="Name*" class="inputFields inlineInputFields"></input>
@@ -439,13 +390,12 @@ $(window).bind('load scroll',function() {
 
 		</div>
 
-		</div>
-
 		<div id="socialmedia">
-			<p id="signature">© Christian Leon Designs 2025</p>
+			<p id="signature">© 2026 Christian Leon</p>
 		
+		</div>
 	</div>
-	</li>
+
 
 	<div>
 	<div class="centerDIV">
@@ -516,56 +466,7 @@ $(window).bind('load scroll',function() {
 			</div>
 		</div>
 	</div>
-	<div class="centerDIV">
-		<!-- The element which will float at the center of the screen -->
-		<div class="divFloat" id="skillCard">
-			<div class="skillBox" style="display: flex; justify-content: center;">
-					<i class="fas fa-file-code icon1" aria-hidden="true"></i>			
-			</div>
-			<div style="margin: 25px 30px 15px; text-align: center;">
-				<h6 class="skillBoxHeader">C++</h6>
-				<h6 class="skillBoxLabel">Concepts</h6>
-				<p >Object Oriented Programming, Data Structures, Algorithms</p>
-				<h6 class="skillBoxLabel">Experience Level</h6>
-				<p>Intermediate</p>
-				<h6 class="skillBoxLabel">Years of Experience</h6>
-				<p>4</p>
-			</div>
-		</div>
-	</div>
-	<div class="centerDIV">
-		<div class="divFloat" id="skillCard">
-			<div class="skillBox" style="display: flex; justify-content: center;">
-					<i class="fab fa-java icon1" aria-hidden="true"></i>			
-			</div>
-			<div style="margin: 25px 30px 15px; text-align: center;">
-				<h6 class="skillBoxHeader">Java</h6>
-				<h6 class="skillBoxLabel">Concepts</h6>
-				<p >Object-Oriented Programming, Classes, Methods, Collections</p>
-				<h6 class="skillBoxLabel">Experience Level</h6>
-				<p>Beginner</p>
-				<h6 class="skillBoxLabel">Years of Experience</h6>
-				<p>1</p>
-			</div>
-		</div>
-	</div>
 	
-	<div class="centerDIV">
-		<div class="divFloat" id="skillCard">
-			<div class="skillBox" style="display: flex; justify-content: center;">
-					<i class="fab fa-python icon1" aria-hidden="true"></i>			
-			</div>
-			<div style="margin: 25px 30px 15px; text-align: center;">
-				<h6 class="skillBoxHeader">Python</h6>
-				<h6 class="skillBoxLabel">Concepts</h6>
-				<p >Functions, Data Processing, Automation Scripts</p>
-				<h6 class="skillBoxLabel">Experience Level</h6>
-				<p>Beginner-Intermediate</p>
-				<h6 class="skillBoxLabel">Years of Experience</h6>
-				<p>1</p>
-			</div>
-		</div>
-	</div>
 	
 	<div class="centerDIV">
 		<div class="divFloat" id="skillCard">
@@ -615,6 +516,56 @@ $(window).bind('load scroll',function() {
 				<p>Intermediate</p>
 				<h6 class="skillBoxLabel">Years of Experience</h6>
 				<p>3</p>
+			</div>
+		</div>
+	</div>
+	<div class="centerDIV">
+		<!-- The element which will float at the center of the screen -->
+		<div class="divFloat" id="skillCard">
+			<div class="skillBox" style="display: flex; justify-content: center;">
+					<i class="fas fa-file-code icon1" aria-hidden="true"></i>			
+			</div>
+			<div style="margin: 25px 30px 15px; text-align: center;">
+				<h6 class="skillBoxHeader">C++</h6>
+				<h6 class="skillBoxLabel">Concepts</h6>
+				<p >Object Oriented Programming, Data Structures, Algorithms</p>
+				<h6 class="skillBoxLabel">Experience Level</h6>
+				<p>Intermediate</p>
+				<h6 class="skillBoxLabel">Years of Experience</h6>
+				<p>4</p>
+			</div>
+		</div>
+	</div>
+	<div class="centerDIV">
+		<div class="divFloat" id="skillCard">
+			<div class="skillBox" style="display: flex; justify-content: center;">
+					<i class="fab fa-java icon1" aria-hidden="true"></i>			
+			</div>
+			<div style="margin: 25px 30px 15px; text-align: center;">
+				<h6 class="skillBoxHeader">Java</h6>
+				<h6 class="skillBoxLabel">Concepts</h6>
+				<p >Object-Oriented Programming, Classes, Methods, Collections</p>
+				<h6 class="skillBoxLabel">Experience Level</h6>
+				<p>Beginner</p>
+				<h6 class="skillBoxLabel">Years of Experience</h6>
+				<p>1</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="centerDIV">
+		<div class="divFloat" id="skillCard">
+			<div class="skillBox" style="display: flex; justify-content: center;">
+					<i class="fab fa-python icon1" aria-hidden="true"></i>			
+			</div>
+			<div style="margin: 25px 30px 15px; text-align: center;">
+				<h6 class="skillBoxHeader">Python</h6>
+				<h6 class="skillBoxLabel">Concepts</h6>
+				<p >Functions, Data Processing, Automation Scripts</p>
+				<h6 class="skillBoxLabel">Experience Level</h6>
+				<p>Beginner-Intermediate</p>
+				<h6 class="skillBoxLabel">Years of Experience</h6>
+				<p>1</p>
 			</div>
 		</div>
 	</div>

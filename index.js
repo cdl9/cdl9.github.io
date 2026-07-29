@@ -5,6 +5,34 @@ header.onclick = function(event){
     header.innerHTML="I am Christian";
 }
 */
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        } else {
+            entry.target.classList.remove("show"); // allows it to animate again
+        }
+    });
+}, {
+    threshold: 0.2
+});
+
+document.querySelectorAll(".reveal").forEach(el => {
+    observer.observe(el);
+});
+
+document.querySelectorAll("#skillsList .skillContainer").forEach((card, index) => {
+    card.style.transitionDelay = `${index * 200}ms`;
+});
+
+document.querySelectorAll("#projectsList .projectCard").forEach((card, index) => {
+    card.style.transitionDelay = `${index * 200}ms`;
+});
+
+document.querySelectorAll(".homeElement").forEach((card, index) => {
+    card.style.transitionDelay = `${index * 200}ms`;
+});
 var aboutIcon = document.getElementsByClassName("box");
 /*
 for(let i=0;i<aboutIcon.length;i++){
