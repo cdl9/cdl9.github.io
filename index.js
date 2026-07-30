@@ -26,7 +26,7 @@ document.querySelectorAll("#skillsList .skillContainer").forEach((card, index) =
     card.style.transitionDelay = `${index * 200}ms`;
 });
 
-document.querySelectorAll("#projectsList .projectCard").forEach((card, index) => {
+document.querySelectorAll("#projectsList .projectWrapper").forEach((card, index) => {
     card.style.transitionDelay = `${index * 200}ms`;
 });
 
@@ -384,58 +384,74 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const form = document.getElementById("contactForm");
 
-const nameInput = document.getElementById("name");
-const emailInput = document.getElementById("email");
-const messageInput = document.getElementById("message");
 
 function validateForm(){
 
     let valid = true;
 
-    clearError("name");
-    clearError("email");
-    clearError("message");
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
 
-    if(nameInput.value.trim() === ""){
-        showError(nameInput,"Please enter your name");
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if(name === ""){
+
+        showError("name","Please enter your name.");
         valid = false;
+
     }
 
-    if(emailInput.value.trim() === ""){
-        showError(emailInput,"Please enter your email");
-        valid = false;
+    if(email === ""){
+
+    showError("email","Please enter your email.");
+    valid = false;
+
     }
-    else if(!validateEmail(emailInput.value)){
-        showError(emailInput,"Enter a valid email");
+    else if(!emailRegex.test(email)){
+
+        showError("email","Please enter a valid email address.");
         valid = false;
+
     }
 
-    if(messageInput.value.trim() === ""){
-        showError(messageInput,"Please enter a message");
+    if(message === ""){
+
+        showError("message","Please enter a message.");
         valid = false;
+
     }
 
+    if(!valid){
+        return;
+    }
     return valid;
 }
-function validateEmail(email){
 
-    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-    return regex.test(email);
-
-}
 function showError(inputId,message){
+    const input = document.getElementById(inputId);
+    const error = document.getElementById(inputId + "Error");
 
-    document.getElementById(inputId).classList.add("error");
+    // Restart border animation
+    input.classList.remove("input-error");
+    void input.offsetWidth;
+    input.classList.add("input-error");
 
-    document.getElementById(inputId + "Error").textContent = message;
+    // Restart text animation
+    error.classList.remove("show");
+    void error.offsetWidth;
+    error.textContent = message;
+    error.classList.add("show");
 
 }
 function clearError(inputId){
 
-    document.getElementById(inputId).classList.remove("error");
+    const input = document.getElementById(inputId);
+    const error = document.getElementById(inputId + "Error");
 
-    document.getElementById(inputId + "Error").textContent = "";
+    input.classList.remove("input-error");
+    error.classList.remove("show");
+    error.textContent = "";
 
 }
 emailjs.init({
@@ -476,3 +492,12 @@ function sendEmail(){
 
 }
 
+["name","email","message"].forEach(id=>{
+
+    document.getElementById(id).addEventListener("input",function(){
+
+        clearError(id);
+
+    });
+
+});

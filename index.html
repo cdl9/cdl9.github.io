@@ -119,11 +119,11 @@ $(window).bind('load scroll',function() {
 				<span class="text highlightText2">Software Developer</span>
 					specializing in React, JavaScript, React Native and PostgreSQL. I build modern web applications with <span class="text highlightText2">clean UI</span> and scalable <span class="text highlightText2">backend</span> solutions.
 				</p>
-				<div class="rowDivs">
-						<button style="flex:1" class="submitButton homeElement reveal" id="downloadButton" onclick="window.open('Christian_Leon_Junior_Developer_EB.pdf','_blank')">
+				<div class="rowDivs homeElement reveal">
+						<button style="flex:1" id="downloadButton" class="submitButton"  onclick="window.open('Christian_Leon_Junior_Developer_EB.pdf','_blank')">
 							DOWNLOAD CV
 						</button>
-						<a style="flex:1" class="submitButton homeElement reveal" id="projectButton" href="#projects" >PROJECTS</a>
+						<a style="flex:1" id="projectButton" class="submitButton"  href="#projects" >PROJECTS</a>
 				</div>
 			</div>
 
@@ -262,8 +262,8 @@ $(window).bind('load scroll',function() {
 		</div>
 
 		<div id="projectsList">
-			<div class="horizontalList">
-				<div class="projectCard learnButton reveal">
+			<div class="horizontalList projectWrapper reveal">
+				<div class="projectCard learnButton ">
 				<div class="projects project1">
 					<div class="fav-btn2">
 						<span>Featured</span>
@@ -286,32 +286,31 @@ $(window).bind('load scroll',function() {
 				</div>
 				</div>
 			</div>
-			<div class="horizontalList">
-				<div class="projectCard learnButton reveal">
-				
-				<div class="projects project2">
-				</div>
-				<div class="tags">
-					<div class="rowInfo">
-						<span class="highlightText">Mobile Application</span>
-						<span class="opacityLabel">2026</span>
+			<div class="horizontalList projectWrapper reveal">
+				<div class="projectCard learnButton ">
+					<div class="projects project2">
 					</div>
-					
-					<div class="project-description">
-						<span class="project-title">FieldWorker App</span><br>
-						<span class="opacityLabel" style="flex-wrap:wrap">A mobile application that helps field workers manage daily tasks and report progress.</span>
+					<div class="tags">
+						<div class="rowInfo">
+							<span class="highlightText">Mobile Application</span>
+							<span class="opacityLabel">2026</span>
+						</div>
+						
+						<div class="project-description">
+							<span class="project-title">FieldWorker App</span><br>
+							<span class="opacityLabel" style="flex-wrap:wrap">A mobile application that helps field workers manage daily tasks and report progress.</span>
+						</div>
+
+						<span class="tagDiv">React </span>
+						<span class="tagDiv">Node.js</span>
+						<span class="tagDiv">PostgreSQL</span>
+
 					</div>
-
-					<span class="tagDiv">React </span>
-					<span class="tagDiv">Node.js</span>
-					<span class="tagDiv">PostgreSQL</span>
-
-				</div>
 			
 				</div>
 			</div>
-			<div class="horizontalList">
-				<div class="projectCard learnButton reveal">				
+			<div class="horizontalList projectWrapper reveal">
+				<div class="projectCard learnButton ">				
 					<div class="projects project3">
 					</div>
 					<div class="tags">
@@ -331,8 +330,8 @@ $(window).bind('load scroll',function() {
 					</div>
 				</div>
 			</div>
-			<div class="horizontalList">
-				<div class="projectCard learnButton reveal">
+			<div class="horizontalList projectWrapper reveal">
+				<div class="projectCard learnButton ">
 					<div class="projects project4">
 					</div>
 					<div class="tags">
@@ -365,7 +364,7 @@ $(window).bind('load scroll',function() {
 
 		<div class="row-flex contact-column" style="padding:2rem; gap:2rem;">
 			<div class="column-flex flex-start reveal contact-element">
-				<p class="textContact">I'm currently seeking Software Engineer and Full Stack Developer opportunities. If you'd like to discuss a position, collaborate on a project, or simply connect, I'd love to hear from you.
+				<p class="textContact opacityLabel">I'm currently seeking Software Engineer and Full Stack Developer opportunities. If you'd like to discuss a position, collaborate on a project, or simply connect, I'd love to hear from you.
 				</p>
 				<div class="row-flex" style="gap:0.5rem;margin-bottom:1rem;">
 					<div class="round-container"><i class="fa-solid fa-envelope"aria-hidden="true"></i></div>
@@ -390,24 +389,20 @@ $(window).bind('load scroll',function() {
 				</div>
 			</div>
 			<div id="contactForm" class="reveal contact-element">
-				<p><i class="fa-regular fa-user"aria-hidden="true"></i> Your Name</p>
+				<p class="techLabel opacityLabel"><i class="fa-regular fa-user"aria-hidden="true"></i> Your Name</p>
 				<input id="name" placeholder="FirstName*" class="inputFields inlineInputFields" style="margin-bottom: 10px;"></input>
 				<input placeholder="Last Name*" class="inputFields inlineInputFields"></input>
 				<small class="error-message" id="nameError"></small>
 
-				<p><i class="fa-solid fa-at"aria-hidden="true"></i>Email</p>
+				<p class="techLabel opacityLabel"><i class="fa-solid fa-at"aria-hidden="true"></i>Email</p>
 				<input id="email" placeholder="Email*" class="inputFields" style="margin-top:10px; margin-bottom: 10px;"></input>
 				<small class="error-message" id="emailError"></small>
 
-				<p><i class="fa-regular fa-message"aria-hidden="true"></i>Message</p>
+				<p class="techLabel opacityLabel"><i class="fa-regular fa-message"aria-hidden="true"></i>Message</p>
 				<textarea id="message" placeholder="Message"class="inputFields message"></textarea>
 				<small class="error-message" id="messageError"></small>
 
 				<button class="submitButton" id="emailButton"> SUBMIT</button>
-				<br>
-				<br>
-				<br>
-				<br>
 				
 			</div>
 		</div>
@@ -420,12 +415,12 @@ $(window).bind('load scroll',function() {
 
 		</div>
 
-		<div id="socialmedia">
+		
+	</div>
+<div id="socialmedia">
 			<p id="signature">© 2026 Christian Leon</p>
 		
 		</div>
-	</div>
-
 
 	<div>
 	<div class="centerDIV">
@@ -438,11 +433,11 @@ $(window).bind('load scroll',function() {
 				
 				<h6 class="skillBoxHeader">HTML/HTML5</h6>
 				<h6 class="skillBoxLabel">Concepts</h6>
-				<p >Semantic HTML, Forms & Validation, Accesibility, Responsive Layouts</p>
+				<p class="techLabel opacityLabel">Semantic HTML, Forms & Validation, Accesibility, Responsive Layouts</p>
 				<h6 class="skillBoxLabel">Experience Level</h6>
-				<p>Advanced</p>
+				<p class="techLabel opacityLabel">Advanced</p>
 				<h6 class="skillBoxLabel">Years of Experience</h6>
-				<p>5</p>
+				<p class="techLabel opacityLabel">5</p>
 			</div>
 		</div>
 	</div>
@@ -455,11 +450,11 @@ $(window).bind('load scroll',function() {
 				
 				<h6 class="skillBoxHeader">CSS</h6>
 				<h6 class="skillBoxLabel">Concepts</h6>
-				<p >Flexbox, CSS Grid, Responsive Design, Animations & Transitions, Bootstrap</p>
+				<p class="techLabel opacityLabel">Flexbox, CSS Grid, Responsive Design, Animations & Transitions, Bootstrap</p>
 				<h6 class="skillBoxLabel">Experience Level</h6>
-				<p>Intermediate</p>
+				<p class="techLabel opacityLabel">Intermediate</p>
 				<h6 class="skillBoxLabel">Years of Experience</h6>
-				<p>5</p>
+				<p class="techLabel opacityLabel">5</p>
 			</div>
 		</div>
 	</div>
@@ -472,11 +467,11 @@ $(window).bind('load scroll',function() {
 				
 				<h6 class="skillBoxHeader">JavaScript</h6>
 				<h6 class="skillBoxLabel">Concepts</h6>
-				<p >ES6+, DOM Manipulation, Event Handling, Async/Await, Fetch API, REST API Integration, JSON, Local Storage</p>
+				<p class="techLabel opacityLabel">ES6+, DOM Manipulation, Event Handling, Async/Await, Fetch API, REST API Integration, JSON, Local Storage</p>
 				<h6 class="skillBoxLabel">Experience Level</h6>
-				<p>Intermediate</p>
+				<p class="techLabel opacityLabel">Intermediate</p>
 				<h6 class="skillBoxLabel">Years of Experience</h6>
-				<p>5</p>
+				<p class="techLabel opacityLabel">5</p>
 			</div>
 		</div>
 	</div>
@@ -488,11 +483,11 @@ $(window).bind('load scroll',function() {
 			<div style="margin: 25px 30px 15px; text-align: center;">
 				<h6 class="skillBoxHeader">React</h6>
 				<h6 class="skillBoxLabel">Concepts</h6>
-				<p >Hooks, State Management, React Router, Component Architecture, CRUD Interfaces, API Integration</p>
+				<p class="techLabel opacityLabel">Hooks, State Management, React Router, Component Architecture, CRUD Interfaces, API Integration</p>
 				<h6 class="skillBoxLabel">Experience Level</h6>
-				<p>Intermediate</p>
+				<p class="techLabel opacityLabel">Intermediate</p>
 				<h6 class="skillBoxLabel">Years of Experience</h6>
-				<p>3</p>
+				<p class="techLabel opacityLabel">3</p>
 			</div>
 		</div>
 	</div>
@@ -507,11 +502,11 @@ $(window).bind('load scroll',function() {
 			<div style="margin: 25px 30px 15px; text-align: center;">
 				<h6 class="skillBoxHeader">Node.js</h6>
 				<h6 class="skillBoxLabel">Concepts</h6>
-				<p >REST APIs, Express Integration, Middleware, CRUD Operations</p>
+				<p class="techLabel opacityLabel">REST APIs, Express Integration, Middleware, CRUD Operations</p>
 				<h6 class="skillBoxLabel">Experience Level</h6>
-				<p>Beginner-Intermediate</p>
+				<p class="techLabel opacityLabel">Beginner-Intermediate</p>
 				<h6 class="skillBoxLabel">Years of Experience</h6>
-				<p>1</p>
+				<p  class="techLabel opacityLabel">1</p>
 			</div>
 		</div>
 	</div>
@@ -524,11 +519,11 @@ $(window).bind('load scroll',function() {
 			<div style="margin: 25px 30px 15px; text-align: center;">
 				<h6 class="skillBoxHeader">PostgreSQL</h6>
 				<h6 class="skillBoxLabel">Concepts</h6>
-				<p >Relational Database Design, SQL, Foreign Keys, CRUD Operations</p>
+				<p  class="techLabel opacityLabel">Relational Database Design, SQL, Foreign Keys, CRUD Operations</p>
 				<h6 class="skillBoxLabel">Experience Level</h6>
-				<p>Beginner</p>
+				<p class="techLabel opacityLabel">Beginner</p>
 				<h6 class="skillBoxLabel">Years of Experience</h6>
-				<p>1</p>
+				<p class="techLabel opacityLabel">1</p>
 			</div>
 		</div>
 	</div>
@@ -541,11 +536,11 @@ $(window).bind('load scroll',function() {
 			<div style="margin: 25px 30px 15px; text-align: center;">
 				<h6 class="skillBoxHeader">MySQL</h6>
 				<h6 class="skillBoxLabel">Concepts</h6>
-				<p >SQL Queries, Relational Databases, Joins, CRUD Operations</p>
+				<p class="techLabel opacityLabel">SQL Queries, Relational Databases, Joins, CRUD Operations</p>
 				<h6 class="skillBoxLabel">Experience Level</h6>
-				<p>Intermediate</p>
+				<p class="techLabel opacityLabel">Intermediate</p>
 				<h6 class="skillBoxLabel">Years of Experience</h6>
-				<p>3</p>
+				<p class="techLabel opacityLabel">3</p>
 			</div>
 		</div>
 	</div>
@@ -558,11 +553,11 @@ $(window).bind('load scroll',function() {
 			<div style="margin: 25px 30px 15px; text-align: center;">
 				<h6 class="skillBoxHeader">C++</h6>
 				<h6 class="skillBoxLabel">Concepts</h6>
-				<p >Object Oriented Programming, Data Structures, Algorithms</p>
+				<p class="techLabel opacityLabel">Object Oriented Programming, Data Structures, Algorithms</p>
 				<h6 class="skillBoxLabel">Experience Level</h6>
-				<p>Intermediate</p>
+				<p class="techLabel opacityLabel">Intermediate</p>
 				<h6 class="skillBoxLabel">Years of Experience</h6>
-				<p>4</p>
+				<p class="techLabel opacityLabel">4</p>
 			</div>
 		</div>
 	</div>
@@ -574,11 +569,11 @@ $(window).bind('load scroll',function() {
 			<div style="margin: 25px 30px 15px; text-align: center;">
 				<h6 class="skillBoxHeader">Java</h6>
 				<h6 class="skillBoxLabel">Concepts</h6>
-				<p >Object-Oriented Programming, Classes, Methods, Collections</p>
+				<p class="techLabel opacityLabel">Object-Oriented Programming, Classes, Methods, Collections</p>
 				<h6 class="skillBoxLabel">Experience Level</h6>
-				<p>Beginner</p>
+				<p class="techLabel opacityLabel">Beginner</p>
 				<h6 class="skillBoxLabel">Years of Experience</h6>
-				<p>1</p>
+				<p class="techLabel opacityLabel">1</p>
 			</div>
 		</div>
 	</div>
@@ -591,11 +586,11 @@ $(window).bind('load scroll',function() {
 			<div style="margin: 25px 30px 15px; text-align: center;">
 				<h6 class="skillBoxHeader">Python</h6>
 				<h6 class="skillBoxLabel">Concepts</h6>
-				<p >Functions, Data Processing, Automation Scripts</p>
+				<p class="techLabel opacityLabel">Functions, Data Processing, Automation Scripts</p>
 				<h6 class="skillBoxLabel">Experience Level</h6>
-				<p>Beginner-Intermediate</p>
+				<p class="techLabel opacityLabel">Beginner-Intermediate</p>
 				<h6 class="skillBoxLabel">Years of Experience</h6>
-				<p>1</p>
+				<p class="techLabel opacityLabel">1</p>
 			</div>
 		</div>
 	</div>
@@ -613,7 +608,7 @@ $(window).bind('load scroll',function() {
 				<ul style="padding: 0px 0px 20px 0px;">
 					<li class="horizontalList">
 					<h6 class="skillBoxLabel">Summary</h6>
-					<div class="opacityLabel" style="width: 400px;flex-wrap:wrap">A full-stack staffing management platform built to streamline employee scheduling, event planning, and workforce management for staffing agencies.</div>
+					<div class="techLabel opacityLabel" style="width: 400px;flex-wrap:wrap">A full-stack staffing management platform built to streamline employee scheduling, event planning, and workforce management for staffing agencies.</div>
 					<br><br>
 					<div class="navProjects" id="project4">
 						<div class="navigationBar">
@@ -634,7 +629,7 @@ $(window).bind('load scroll',function() {
 					<li class="horizontalList" style=" vertical-align: top;">
 					<div style="margin-top: 0px; margin-left: 45px; margin-right:35px">
 						<h6 class="skillBoxLabel">Company</h6>
-						<p class="opacityLabel">ES/Cipriani</p>
+						<p class="techLabel opacityLabel">ES/Cipriani</p>
 						<h6 class="skillBoxLabel">Front End</h6>
 						<p ><div class="tagDiv">React</div>
 							<div class="tagDiv">JavaScript</div>
@@ -679,7 +674,7 @@ $(window).bind('load scroll',function() {
 				<ul style="padding: 0px 0px 20px 0px;">
 					<li class="horizontalList">
 					<h6 class="skillBoxLabel">Summary</h6>
-					<div class="opacityLabel" style="width: 400px;flex-wrap:wrap;">
+					<div class="techLabel opacityLabel" style="width: 400px;flex-wrap:wrap;">
 						A cross-platform mobile application developed during my internship to help field workers manage daily tasks, report progress, and improve communication between employees and supervisors.
 					</div>
 					<br><br>
@@ -703,7 +698,7 @@ $(window).bind('load scroll',function() {
 					<li class="horizontalList" style=" vertical-align: top;">
 					<div style="margin-top: 0px; margin-left: 45px; margin-right:35px">
 						<h6 class="skillBoxLabel">Company</h6>
-						<p class="opacityLabel">AnalytIQ</p>
+						<p class="techLabel opacityLabel">AnalytIQ</p>
 						<h6 class="skillBoxLabel">Front End</h6>
 						<p >
 							<div class="tagDiv">React Native</div>
@@ -748,7 +743,7 @@ $(window).bind('load scroll',function() {
 				<ul style="padding: 0px 0px 20px 0px;">
 					<li class="horizontalList">
 					<h6 class="skillBoxLabel">Summary</h6>
-					<div class="opacityLabel" style="width: 400px;flex-wrap:wrap;">
+					<div class="techLabel opacityLabel" style="width: 400px;flex-wrap:wrap;">
 						A recipe discovery application that allows users to search meals, explore recipes, and view detailed cooking instructions using data from TheMealDB API.
 					</div>
 					<br><br>
@@ -771,7 +766,7 @@ $(window).bind('load scroll',function() {
 					<li class="horizontalList" style=" vertical-align: top;">
 					<div style="margin-top: 0px; margin-left: 45px; margin-right:35px">
 						<h6 class="skillBoxLabel">Project</h6>
-						<p>Recipe App</p>
+						<p class="techLabel opacityLabel">Recipe App</p>
 						<h6 class="skillBoxLabel">Front End</h6>
 						<p ><div class="tagDiv">HTML</div> 
 							<div class="tagDiv">CSS</div>
@@ -815,7 +810,7 @@ $(window).bind('load scroll',function() {
 				<ul style="padding: 0px 0px 20px 0px;">
 					<li class="horizontalList">
 					<h6 class="skillBoxLabel">Summary</h6>
-					<div class="opacityLabel" style="width: 400px;flex-wrap:wrap">
+					<div class="techLabel opacityLabel" style="width: 400px;flex-wrap:wrap">
 						An interactive weather dashboard featuring live forecasts, weather maps, saved locations, and data visualizations using the OpenWeather API
 					</div>
 					<br><br>
@@ -838,7 +833,7 @@ $(window).bind('load scroll',function() {
 					<li class="horizontalList" style=" vertical-align: top;">
 					<div style="margin-top: 0px; margin-left: 45px; margin-right:35px">
 						<h6 class="skillBoxLabel">Project</h6>
-						<p>Weather App</p>
+						<p class="techLabel opacityLabel">Weather App</p>
 						<h6 class="skillBoxLabel">Front End</h6>
 						<p >
 							<div class="tagDiv">React</div>
@@ -904,21 +899,6 @@ $(window).bind('load scroll',function() {
 		
 		</div>
 	
-	<div class="centerDIV" id="outsideSentMessage">
-		<!-- The element which will float at the center of the screen -->
-		<div class="divFloat" id="emailSentMessage">
-			<div class="projectHeader">
-					<i class="fa-solid fa-diagram-project iconProject"></i>
-					<h6 class="fontHeader" > | Email sent | </h6>
-					<i class="fa-solid fa-diagram-project iconProject" style="transform: scaleX(-1);"></i>
-
-				</div>
-			<div style="margin: 30px 30px 35px; text-align: center;">
-				<h6 class="skillBoxLabel">Thanks for sending a message. I will contact you ASAP!</h6>
-			</div>
-		</div>
-	</div>
-
 
 </div>
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>

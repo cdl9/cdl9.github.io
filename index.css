@@ -13,8 +13,16 @@
     --permanentLight:#fcfcfc;
     --fontDark:#303030;
     --bgCard:white;
-    --squareButton:#a781e3;
 
+    --background-gradient:transparent;
+    --squareButton:#a781e3;
+    --box-shadow: 0 0 0 1px rgba(255,255,255,.08),
+        0 8px 24px rgba(0,0,0,.12);
+    --glow:0 12px 40px rgba(99,113,221,.18),
+        0 0 0 1px rgba(99,113,221,.15);
+
+
+    --outside-modal: rgba(255, 255, 255, 0.80);
     --subtitle:rgba(48, 48, 48, 0.70);
 
     --max-width-section: 1300px;
@@ -30,12 +38,23 @@ body{
     background-color: var(--fontLight);
 }
 body.dark-mode{
-    --fontLight:#0f0f0f;
+    --fontLight:#111111;
     --fontDark:#e3e3e3;
-    --bgCard:#1a1a1a;
+    --bgCard:#1c1c1c;
     --border:#353535;
-    --main2:#353535;
-    --subtitle:rgba(255, 255, 255, 0.50);
+    --main2:#303030;
+    --subtitle:rgba(255, 255, 255, 0.65);
+
+    --squareButton:#8f7cff;
+    --background-gradient:radial-gradient(circle at 50% 15%,
+            rgba(99,113,221,.35),
+            transparent 70%);
+
+    --box-shadow: 0 12px 40px rgba(99,113,221,.18),
+        0 0 0 1px rgba(99,113,221,.15);
+
+    --outside-modal: rgba(82, 81, 81, 0.8);
+
 }
 html{
     scroll-behavior:smooth;
@@ -109,7 +128,7 @@ body::after{
 }
 .fontHeader{
     font-size: var(--font-xl); 
-    color:var(--fontLight); 
+    color:var(--permanentLight); 
     padding-left: 40px;
 }
 #nameBox{
@@ -125,7 +144,7 @@ body::after{
 }
 #nameLink{
     position:relative;
-    color:var(--fontLight);
+    color:var(--permanentLight);
     font-weight:500;
     margin: 27px 20px;
     display:inline-block;
@@ -147,7 +166,7 @@ body::after{
 a.link{
     position:relative;
     text-align:center;
-    color:var(--fontLight);
+    color:var(--permanentLight);
     display:inline-block;
     font-weight:500;
     font-size:var(--font-m);
@@ -274,8 +293,9 @@ ul{
 .sections{
     position:relative;
     width:100%;
+}
+.hero-container{
     max-width: var(--max-width-section);
-
 }
 #sectionsList{
     padding:0;
@@ -297,8 +317,27 @@ ul{
     margin:auto;
 }
 
+#home{
+    position:relative;
+    overflow:hidden;
+}
+
+#home::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:var(--background-gradient);
+    pointer-events:none;
+    z-index:0;
+}
+
+#home > *{
+    position:relative;
+    z-index:1;
+}
+
 .hero-container{
-    margin:auto 30%;
+    margin:auto 35%;
 }
 
 /*About Section*******************************************************************/
@@ -452,7 +491,7 @@ li.horizontalList{
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba(255, 255, 255, 0.80);
+    background-color: var(--outside-modal);
     width: 100%;
     height: 100%;    
     padding-top: 100px;
@@ -460,7 +499,7 @@ li.horizontalList{
 }
  .divFloat {
         margin: auto auto;
-        background-color: #FFF;
+        background-color: var(--bgCard);
         border: solid 0px #999;
         color: #000;
         width: 300px;
@@ -469,7 +508,7 @@ li.horizontalList{
         -webkit-border-radius: 10px;
         -webkit-box-orient: vertical;
         -webkit-transition: 200ms -webkit-transform;
-        box-shadow: 0 4px 23px 5px rgba(0, 0, 0, 0.2), 0 2px 6px rgba(0, 0, 0, 0.15);
+        box-shadow: var(--box-shadow);
         display: block;
         overflow:hidden;
     }
@@ -516,9 +555,7 @@ div.projectCard{
 }
 .projectCard:hover{
     transform: translateY(-10px);
-    box-shadow:
-0 0 0 1px rgba(255,255,255,.08),
-0 8px 24px rgba(0,0,0,.12);
+    box-shadow:var(--box-shadow);
 }
 div.navProjects{
     width:400px;
@@ -732,6 +769,15 @@ div.zoomIllustration{
     width:calc(100% - 0px);
     box-sizing:border-box;
     border-radius:10px;
+    border:2px solid transparent;
+}
+
+.inputFields:hover,
+.inputFields:focus{
+    outline:none;
+    border-color:var(--dark1);
+    border:2px solid var(--dark1);
+    box-shadow:var(--glow);
 }
 .inlineInputFields{
     display:inline;
@@ -739,13 +785,6 @@ div.zoomIllustration{
     margin:0px 0px;
 
 } 
-
-
-.inputFields:focus{
-    outline:none;
-  /*  border-bottom: 3px solid var(--accent1);
-    transition: border-bottom 1s ease;
-*/}
 
 .editable:empty:before{
     content: attr(data-placeholder);
@@ -767,43 +806,65 @@ div.zoomIllustration{
 }
 
 #signature{
-    color:var(--fontLight);
+    color:var(--permanentLight);
     margin:auto;
     font-size: 14px;
 }
 /*Buttons*********************************************/
 .submitButton{
+    cursor:pointer;
     height:40px;
     width:180px;
-    border:none;
     background:var(--squareButton);
     color:var(--permanentLight);
     position:relative;
-    border-radius: 10px;
-    margin-top:30px;
-    margin-bottom:30px;
     padding:0;
     padding-top:15px;
     padding-bottom:45px;
-    transition:800ms ease all;
     outline:none;
     font-size:20px;
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
     overflow:hidden; 
     border:2px solid transparent;
     border-radius:10px;
-    transition:.4s;
+    transition:
+        transform .15s ease,
+        background-color .25s ease,
+        color .25s ease,
+        border-color .25s ease,
+        box-shadow .25s ease;
+}
+.submitButton::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:-120%;
+    width:50%;
+    height:100%;
+    background:rgba(255,255,255,.25);
+    transform:skewX(-25deg);
+    transition:left .5s ease;
+}
+
+.submitButton:hover::before{
+    left:150%;
 }
  .submitButton:hover{
     background:transparent;
     border:2px solid var(--squareButton);
     color:var(--squareButton);
-    box-shadow:0 0 15px rgba(99,113,221,.25);
+    box-shadow: 0 8px 20px rgba(99,113,221,.25);
+    transform: translateY(-2px);
 }
 .submitButton:focus{
     outline:none;
 }
-
+.submitButton:focus-visible{
+    outline:none;
+    box-shadow:
+        0 0 0 3px rgba(99,113,221,.25),
+        0 8px 20px rgba(99,113,221,.2);
+}
 #downloadButton, #projectButton{
     margin:30px 0;
 }
@@ -814,12 +875,10 @@ div.zoomIllustration{
     background-color: var(--bgCard);
     color:var(--main3);
     border-color: var(--main3);
-    box-shadow: none;
 }
 #projectButton:hover{
     border-color: var(--squareButton);
     color:var(--squareButton);
-    box-shadow:0 0 15px rgba(99,113,221,.25);
 }
 .rowDivs{
     display:flex;
@@ -828,7 +887,9 @@ div.zoomIllustration{
     align-items:center;
     flex-wrap: wrap;
 }
-
+.submitButton:active{
+    transform: translateY(1px) scale(.97);
+}
 
 .btClose{
     height:30px;
@@ -1132,13 +1193,13 @@ a.fa-facebook, a.fa-github, a.fa-instagram, a.fa-linkedin{
 .toggle-label .slider{
   width: 50px;
   height: 26px;
-  background: var(--main2);
+  background: var(--permanentLight);
   border-radius: 20px;
   position: relative;
   transition: background 0.3s;
 }
 .fa-sun,.fa-moon{
-  color:var(--main2);
+  color:var(--permanentLight);
 }
 .toggle-label .slider::before {
   content: "";
@@ -1253,9 +1314,10 @@ a.fa-facebook, a.fa-github, a.fa-instagram, a.fa-linkedin{
     font-size: var(--font-s);
 }
 
-.error{
+.input-error{
     border:2px solid #F6C453;
     box-shadow:0 0 8px rgba(246,196,83,.35);
+    animation: errorShake .45s ease;
 }
 .error-message{
     display:block;
@@ -1264,6 +1326,28 @@ a.fa-facebook, a.fa-github, a.fa-instagram, a.fa-linkedin{
     margin-top:5px;
     min-height:18px;
 }
+.error-message.show{
+    animation:errorFade .4s ease;
+}
+@keyframes errorShake{
+    0%   { transform:translateX(0); }
+    20%  { transform:translateX(-5px); }
+    40%  { transform:translateX(5px); }
+    60%  { transform:translateX(-4px); }
+    80%  { transform:translateX(4px); }
+    100% { transform:translateX(0); }
+}
+@keyframes errorFade {
+    0% {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
   @media (max-device-width:450px) {
 
     #home{
