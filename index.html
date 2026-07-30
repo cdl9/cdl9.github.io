@@ -113,15 +113,20 @@ $(window).bind('load scroll',function() {
 		<div class="sections reveal" id="home" >
 			<canvas id="canvas">
 			</canvas>
-			<p class="bigTitle homeElement reveal"><span class="titleLO">> </span>hi, I'm <span class="titleHL">Chris </span><span class="blinking-cursor"></span></p>
-			<p class="text homeElement reveal"> I'm a
-			<span class="text highlightText2">Software Developer</span>
-				specializing in React, JavaScript, React Native and PostgreSQL. I build modern web applications with <span class="text highlightText2">clean UI</span> and scalable <span class="text highlightText2">backend</span> solutions.
-			</p>
-			<div class="rowDivs">
-				<div><button class="submitButton homeElement reveal" id="downloadButton" onclick="window.open('Christian_Leon_Junior_Developer_EB.pdf','_blank')">DOWNLOAD CV</button></div>
-				<div><a class="submitButton homeElement reveal" id="projectButton" href="#projects" >PROJECTS</a></div>
+			<div class="hero-container">
+				<p class="bigTitle homeElement reveal"><span class="titleLO">> </span>hi, I'm <span class="titleHL">Chris </span><span class="blinking-cursor"></span></p>
+				<p class="text homeElement reveal"> I'm a
+				<span class="text highlightText2">Software Developer</span>
+					specializing in React, JavaScript, React Native and PostgreSQL. I build modern web applications with <span class="text highlightText2">clean UI</span> and scalable <span class="text highlightText2">backend</span> solutions.
+				</p>
+				<div class="rowDivs">
+						<button style="flex:1" class="submitButton homeElement reveal" id="downloadButton" onclick="window.open('Christian_Leon_Junior_Developer_EB.pdf','_blank')">
+							DOWNLOAD CV
+						</button>
+						<a style="flex:1" class="submitButton homeElement reveal" id="projectButton" href="#projects" >PROJECTS</a>
+				</div>
 			</div>
+
 		</div>
 	
 		<div class="sections reveal" id="about">
@@ -137,28 +142,28 @@ $(window).bind('load scroll',function() {
 						<div class="box horizontalList">
 						<div class="boxContent">
 							<i class="fab fa-html5 icon1" aria-hidden="true"></i>			
-							<br>HTML
+							<p class="skill-name">HTML<p>
 						</div>
 						</div>
 				
 						<div class="box horizontalList">
 						<div class="boxContent">
 							<i class="fab fa-css3-alt icon1" aria-hidden="true"></i>
-							<br>CSS
+							<p class="skill-name">CSS</p>
 						</div>
 						</div>
 
 						<div class="box horizontalList">
 						<div class="boxContent">
 							<i class="fab fa-js icon1" aria-hidden="true"></i>
-							<br>JavaScript
+							<p class="skill-name">JavaScript</p>
 						</div>
 						</div>
 				
 						<div class="box horizontalList">
 						<div class="boxContent">
 						<i class="fab fa-react icon1" aria-hidden="true" id="btClick"></i>
-						<br>React
+						<p class="skill-name">React</p>
 						</div>
 						</div>
 				</div>
@@ -167,44 +172,44 @@ $(window).bind('load scroll',function() {
 			
 			
 			<div class="skillContainer reveal">
-			<h4 class="techLabel"><i class="fa-solid fa-server" aria-hidden="true"></i>Backend/Databases</h4>
+			<h4 class="techLabel"><i class="fa-solid fa-server" aria-hidden="true"></i> Backend/Databases</h4>
 			<div class="skillsGroup">
 				<div class="box horizontalList">
 					<div class="boxContent">
 					<i class="fa-brands fa-node-js icon1" aria-hidden="true"></i>
-					<br>Node.js
+					<p class="skill-name">Node.js</p>
 				</div>
 				</div>
 				<div class="box horizontalList">
 				<div class="boxContent">
 					<i class="fa-brands fa-postgresql icon1" aria-hidden="true"></i>
-					<br>PostgreSQL
+					<p class="skill-name">PostgreSQL</p>
 				</div>
 				</div>
 				<div class="box horizontalList">
 					<div class="boxContent">
 					<i class="fas fa-database icon1" aria-hidden="true"></i>
-					<br>MySQL
+					<p class="skill-name">MySQL</p>
 				</div>
 				</div>
 				<div class="box horizontalList">
 				<div class="boxContent">
 
 					<i class="fas fa-file-code icon1" aria-hidden="true"></i>
-					<br>C++
+					<p class="skill-name">C++</p>
 				</div>
 				</div>
 				<div class="box horizontalList">
 				<div class="boxContent">
 					<i class="fab fa-java icon1" aria-hidden="true"></i>
-					<br>Java
+					<p class="skill-name">Java</p>
 				</div>
 				</div>
 				<div class="box horizontalList">
 				<div class="boxContent">
 					
 					<i class="fab fa-python icon1" aria-hidden="true"></i>
-					<br>Python
+					<p class="skill-name">Python</p>
 				</div>
 				</div>
 			</div>
@@ -216,31 +221,31 @@ $(window).bind('load scroll',function() {
 				<div class="box horizontalList">
 				<div class="boxContent">
 					<i class="fa-brands fa-git icon1" aria-hidden="true"></i>
-					<br>Git
+					<p class="skill-name">Git</p>
 				</div>
 				</div>
 				<div class="box horizontalList">
 				<div class="boxContent">
 					<i class="fa-brands fa-github icon1" aria-hidden="true"></i>
-					<br>GitHub
+					<p class="skill-name">GitHub</p>
 				</div>
 				</div>
 				<div class="box horizontalList">
 					<div class="boxContent">
 					<i class="fa-brands fa-figma icon1" aria-hidden="true"></i>
-					<br>Figma
+					<p class="skill-name">Figma</p>
 				</div>
 				</div>
 				<div class="box horizontalList">
 					<div class="boxContent">
 					<i class="fa-brands fa-microsoft icon1" aria-hidden="true"></i>
-					<br>Microsoft
+					<p class="skill-name">Microsoft</p>
 					</div>
 				</div>
 				<div class="box horizontalList">
 					<div class="boxContent">
 					<i class="fa-brands fa-linux icon1" aria-hidden="true"></i>
-					<br>Linux
+					<p class="skill-name">Linux</p>
 				</div>
 				</div>
 			</div>
@@ -358,8 +363,8 @@ $(window).bind('load scroll',function() {
 			<p class="name " id="subtitle4"><span class="name highlightText2">04. </span>Let's work together!</p>
 		</div>
 
-		<div class="row-flex" style="padding:2rem; gap:2rem;">
-			<div style="flex: 1;" class="column-flex flex-start reveal contact-element">
+		<div class="row-flex contact-column" style="padding:2rem; gap:2rem;">
+			<div class="column-flex flex-start reveal contact-element">
 				<p class="textContact">I'm currently seeking Software Engineer and Full Stack Developer opportunities. If you'd like to discuss a position, collaborate on a project, or simply connect, I'd love to hear from you.
 				</p>
 				<div class="row-flex" style="gap:0.5rem;margin-bottom:1rem;">
@@ -384,19 +389,20 @@ $(window).bind('load scroll',function() {
 					</div>
 				</div>
 			</div>
-			<div id="contactForm" style="flex: 1;" class="reveal contact-element">
+			<div id="contactForm" class="reveal contact-element">
 				<p><i class="fa-regular fa-user"aria-hidden="true"></i> Your Name</p>
-				<input placeholder="FirstName*" class="inputFields inlineInputFields" style="margin-bottom: 10px;"></input>
+				<input id="name" placeholder="FirstName*" class="inputFields inlineInputFields" style="margin-bottom: 10px;"></input>
 				<input placeholder="Last Name*" class="inputFields inlineInputFields"></input>
+				<small class="error-message" id="nameError"></small>
+
 				<p><i class="fa-solid fa-at"aria-hidden="true"></i>Email</p>
+				<input id="email" placeholder="Email*" class="inputFields" style="margin-top:10px; margin-bottom: 10px;"></input>
+				<small class="error-message" id="emailError"></small>
 
-				<input placeholder="Email*" class="inputFields" style="margin-top:10px; margin-bottom: 10px;"></input>
-				
-				<input placeholder="Subject" class="inputFields" style="margin-top:10px; margin-bottom: 10px;"></input>
 				<p><i class="fa-regular fa-message"aria-hidden="true"></i>Message</p>
+				<textarea id="message" placeholder="Message"class="inputFields message"></textarea>
+				<small class="error-message" id="messageError"></small>
 
-				<textarea placeholder="Message"class="inputFields message"></textarea>
-			
 				<button class="submitButton" id="emailButton"> SUBMIT</button>
 				<br>
 				<br>
@@ -915,6 +921,7 @@ $(window).bind('load scroll',function() {
 
 
 </div>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
 <script src="index.js"></script>
 </body>

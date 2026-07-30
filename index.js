@@ -65,6 +65,8 @@ document.addEventListener('click', function(event) {
     element.style.display = 'none';
   }
 });*/
+
+/*
 var emailButton = document.getElementById("emailButton");
 var emailSentMessage = document.getElementById("emailSentMessage");
 var outsideSentMessage = document.getElementById("outsideSentMessage");
@@ -89,7 +91,7 @@ window.addEventListener('click', function(e) {
         }
 })
 
-
+*/
 
 var aboutFloatingBox = document.getElementsByClassName("centerDIV");
 var btClose= document.getElementsByClassName("btClose");
@@ -378,3 +380,99 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+
+const form = document.getElementById("contactForm");
+
+const nameInput = document.getElementById("name");
+const emailInput = document.getElementById("email");
+const messageInput = document.getElementById("message");
+
+function validateForm(){
+
+    let valid = true;
+
+    clearError("name");
+    clearError("email");
+    clearError("message");
+
+    if(nameInput.value.trim() === ""){
+        showError(nameInput,"Please enter your name");
+        valid = false;
+    }
+
+    if(emailInput.value.trim() === ""){
+        showError(emailInput,"Please enter your email");
+        valid = false;
+    }
+    else if(!validateEmail(emailInput.value)){
+        showError(emailInput,"Enter a valid email");
+        valid = false;
+    }
+
+    if(messageInput.value.trim() === ""){
+        showError(messageInput,"Please enter a message");
+        valid = false;
+    }
+
+    return valid;
+}
+function validateEmail(email){
+
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    return regex.test(email);
+
+}
+function showError(inputId,message){
+
+    document.getElementById(inputId).classList.add("error");
+
+    document.getElementById(inputId + "Error").textContent = message;
+
+}
+function clearError(inputId){
+
+    document.getElementById(inputId).classList.remove("error");
+
+    document.getElementById(inputId + "Error").textContent = "";
+
+}
+emailjs.init({
+    publicKey: "Epmy7JyTtXXiYT96M",
+});
+
+document
+.getElementById("emailButton")
+.addEventListener("click", sendEmail);
+
+function sendEmail(){
+
+    if(!validateForm()){
+        return;
+    }
+    emailjs.send(
+        "service_krxa2k8",
+        "template_1oi6i6o",
+        {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            subject: "test",
+            message: document.getElementById("message").value
+        }
+    )
+    .then(function(){
+
+        alert("Message sent!");
+
+    })
+    .catch(function(error){
+
+        alert("Something went wrong.");
+
+        console.log(error);
+
+    });
+
+}
+
