@@ -561,6 +561,7 @@ div.projects{
     border-radius: 10px 10px 0 0;
 }
 div.projectCard{
+    cursor:pointer;
     width:100%;
     max-width:350px;
     min-height:500px;
@@ -1116,9 +1117,8 @@ a.fa-facebook, a.fa-github, a.fa-instagram, a.fa-linkedin{
         width:100%;
     }
     .box{
-        width:300px;
-        height:300px;
-        font-size:40px;
+        height:10rem;
+        font-size:2rem;
     }
     p.tags{
         margin: auto calc(50% - 175px);
@@ -1126,8 +1126,8 @@ a.fa-facebook, a.fa-github, a.fa-instagram, a.fa-linkedin{
     }
     
     .icon1{
-        font-size: 150px;
-        margin-top:30px;
+
+        font-size:6rem;
     }
     .inputFields{
         height:100px;
@@ -1463,8 +1463,8 @@ a.fa-facebook, a.fa-github, a.fa-instagram, a.fa-linkedin{
         font-size: 2rem;
     }
     .boxContent{
-        width: calc(100% - 2rem); /* 5px border on all sides */
-        height: calc(100% - 2rem);
+        width: calc(100% - 1.5rem); /* 5px border on all sides */
+        height: calc(100% - 1.5rem);
     }
     .skill-name{
         font-size: var(--font-xl);
