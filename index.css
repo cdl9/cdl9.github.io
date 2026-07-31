@@ -330,10 +330,6 @@ ul{
     margin:auto;
 }
 
-#home{
-    position:relative;
-    overflow:hidden;
-}
 
 #home::before{
     content:"";
@@ -540,7 +536,6 @@ li.horizontalList{
     text-align:center;
     max-width:var(--max-width-section);
 }
- 
 #projectsList{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
