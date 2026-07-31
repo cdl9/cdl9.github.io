@@ -119,6 +119,19 @@ body::after{
     padding:5px; 
     border-radius: 7.5px;
 }
+.skill-featured{
+    font-size: var(--font-l);
+    font-weight:500;
+    justify-content:left;
+    align-items: center;
+    padding:1rem 0;
+    gap:0.5rem;
+}
+.skill-name{
+    color:var(--main3);
+    font-weight:500;
+    margin: 0;
+}
 .projectHeader{
     background-color: var(--dark1); 
     height:100px; 
@@ -175,7 +188,7 @@ a.link{
 }
 a.link:hover, a.active:hover{
     text-decoration:none;   
-    color: var(--fontLight);
+    color: var(--permanentLight);
     background: rgba(158, 154, 238, 0.5);
     border-radius: 5px;
     padding: 5px 20px;
@@ -389,12 +402,12 @@ ul{
     background-color: var(--bgCard);
     text-align:left;
     position:relative;
-    margin:15px 0px 20px;
+    margin:0px;
     display: flex;
     flex-direction:row;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 5%;
+    padding: 0 5%;
 
 }
 .techLabel {
@@ -426,15 +439,14 @@ li.horizontalList{
 .box{
     background-color: var(--bgCard);
     background-color: var(--main3);
-    margin: auto;
-    height: 100px;
+    margin: auto 0;
+    height: 3rem;
     aspect-ratio:1.1547;
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     position:relative;
     display: flex;
     vertical-align: top;
     font-weight:500;
-    font-size:14px;
     color:var(--main3);
     align-items: center;
     justify-content: center;
@@ -446,11 +458,16 @@ li.horizontalList{
   background-color: var(--bgCard); /* Inner background color */
   clip-path:  polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
   text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
 }
 .box:hover{
 	background-color:var(--dark1);
 	color:var(--dark1);
-    transform: translateY(-10px);
+    //transform: translateY(-10px);
 
 }
 .box:hover .boxContent{
@@ -478,8 +495,8 @@ li.horizontalList{
     display:inline-block;
     padding:10px 0px 5px;
     color:inherit;
-    margin-top:10px;
-    font-size:40px;
+    font-size:2rem;
+    top:-2.5px;
      
 }
 .centerIcon{
@@ -487,7 +504,7 @@ li.horizontalList{
   margin-right: auto;
 }
 
-.centerDIV,.projectDetailsDIV, #outisdeSentMessage{
+.projectDetailsDIV, #outisdeSentMessage{
     position: fixed;
     top: 0;
     left: 0;
@@ -553,7 +570,7 @@ div.projectCard{
     background-color: var(--bgCard);
     font-size:var(--font-m);
 }
-.projectCard:hover{
+.projectCard:hover,.skillContainer:hover{
     transform: translateY(-10px);
     box-shadow:var(--box-shadow);
 }
@@ -1143,6 +1160,9 @@ a.fa-facebook, a.fa-github, a.fa-instagram, a.fa-linkedin{
 .opacityLabel{
     opacity: 0.7;
 }
+.main-color-font{
+    color: var(--main3);
+}
 .skillBox > .icon1{
     color:var(--fontLight);
 }
@@ -1296,10 +1316,7 @@ a.fa-facebook, a.fa-github, a.fa-instagram, a.fa-linkedin{
 
 .row-flex{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     flex-direction:row;
-    padding:0;
 }
 .column-flex{
     display: flex;
@@ -1347,6 +1364,17 @@ a.fa-facebook, a.fa-github, a.fa-instagram, a.fa-linkedin{
         transform: translateY(0);
     }
 }
+
+
+
+.rem-bp{
+    padding-top: 2rem;
+    font-weight: 500;
+}
+
+
+
+
 
   @media (max-device-width:450px) {
 
@@ -1439,9 +1467,8 @@ a.fa-facebook, a.fa-github, a.fa-instagram, a.fa-linkedin{
         height: calc(100% - 2rem);
     }
     .skill-name{
-        font-size: var(--font-xl)
+        font-size: var(--font-xl);
     }
-    
     .toggle-wrapper {
         padding: 10px;
     }

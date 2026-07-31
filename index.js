@@ -22,7 +22,7 @@ document.querySelectorAll(".reveal").forEach(el => {
     observer.observe(el);
 });
 
-document.querySelectorAll("#skillsList .skillContainer").forEach((card, index) => {
+document.querySelectorAll("#skillsList .skillWrapper").forEach((card, index) => {
     card.style.transitionDelay = `${index * 200}ms`;
 });
 
